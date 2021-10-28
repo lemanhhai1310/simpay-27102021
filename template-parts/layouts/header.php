@@ -175,7 +175,7 @@
                             <?php endif; ?>
                         </div>
                         <div class="uk-navbar-item uk-hidden@m">
-                            
+
                         </div>
                     </div>
                     <!--/uk-navbar-right-->

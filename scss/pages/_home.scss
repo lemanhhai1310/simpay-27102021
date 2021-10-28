@@ -1,0 +1,113 @@
+.home{
+  &__section{
+    @include fluidx(32px,25px,padding-top);
+  }
+  &__sanpham{
+    &__card{
+      text-align: center;
+      box-shadow: 0px 4px 30px rgba(27, 25, 86, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      @include media-breakpoint-down('s'){
+        min-width: 240px;
+        .uk-first-column> &{
+          margin-left: 15px;
+        }
+        .home__sanpham__column:last-child &{
+          margin-right: 15px;
+        }
+      }
+    }
+    &__overFlow{
+      $x:0px;
+      padding-top: #{$x};
+      padding-bottom: #{$x};
+      &::-webkit-scrollbar{
+        display: none;
+      }
+    }
+    &__icon{
+      width: 24px;
+      height: 24px;
+      color: rgba(#fff,0.7);
+      background-repeat: no-repeat;
+      background-position: center;
+      &--next{
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.79289 7.79289C9.40237 8.18342 9.40237 8.81658 9.79289 9.20711L12.5858 12L9.79289 14.7929C9.40237 15.1834 9.40237 15.8166 9.79289 16.2071C10.1834 16.5976 10.8166 16.5976 11.2071 16.2071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L11.2071 7.79289C10.8166 7.40237 10.1834 7.40237 9.79289 7.79289Z' fill='rgba(255,255,255,0.7)'/%3E%3C/svg%3E%0A");
+        &:hover{
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.79289 7.79289C9.40237 8.18342 9.40237 8.81658 9.79289 9.20711L12.5858 12L9.79289 14.7929C9.40237 15.1834 9.40237 15.8166 9.79289 16.2071C10.1834 16.5976 10.8166 16.5976 11.2071 16.2071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L11.2071 7.79289C10.8166 7.40237 10.1834 7.40237 9.79289 7.79289Z' fill='white'/%3E%3C/svg%3E%0A");
+        }
+      }
+      &--prev{
+        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.2071 16.2071C14.5976 15.8166 14.5976 15.1834 14.2071 14.7929L11.4142 12L14.2071 9.20711C14.5976 8.81658 14.5976 8.18342 14.2071 7.79289C13.8166 7.40237 13.1834 7.40237 12.7929 7.79289L9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L12.7929 16.2071C13.1834 16.5976 13.8166 16.5976 14.2071 16.2071Z' fill='rgba(255,255,255,0.7)'/%3E%3C/svg%3E%0A");
+        &:hover{
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.2071 16.2071C14.5976 15.8166 14.5976 15.1834 14.2071 14.7929L11.4142 12L14.2071 9.20711C14.5976 8.81658 14.5976 8.18342 14.2071 7.79289C13.8166 7.40237 13.1834 7.40237 12.7929 7.79289L9.29289 11.2929C8.90237 11.6834 8.90237 12.3166 9.29289 12.7071L12.7929 16.2071C13.1834 16.5976 13.8166 16.5976 14.2071 16.2071Z' fill='white'/%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__column{
+
+    }
+    &__body{
+      padding: 15px 15px;
+    }
+    &__footer{
+      padding: 13px 0px;
+      .cool &{
+        background-color: #3772FF;
+      }
+      .biz &{
+        background-color: #ed6642;
+      }
+      .sang &{
+        background-color: #fec70b;
+      }
+      .may &{
+        background-color: #e8392a;
+      }
+      .pal &{
+        background-color: #5BCCF9;
+      }
+    }
+    &__number{
+      line-height: 1;
+      @extend .fz-20;
+      font-family: $font-SVNGilroy-Bold;
+      color: #FFFFFF;
+    }
+    &__title{
+      text-transform: uppercase;
+      margin: 0;
+      margin-bottom: 4px;
+      color: #000000;
+      line-height: (20/24);
+      @extend .fz-24;
+      font-family: $font-SVNGilroy-Bold;
+      span{
+        .cool &{
+          color: #3772FF;
+        }
+        .biz &{
+          color: #ed6642;
+        }
+        .sang &{
+          color: #fec70b;
+        }
+        .may &{
+          color: #e8392a;
+        }
+        .pal &{
+          color: #5BCCF9;
+        }
+      }
+    }
+    &__desc{
+      margin: 0;
+      line-height: (20/12);
+      @extend .fz-12;
+      color: #212B36;
+      font-family: $font-SVNGilroy-SemiBold;
+    }
+  }
+}
