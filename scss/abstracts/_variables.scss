@@ -13,11 +13,15 @@ $font-SVNGilroy-Regular: 'SVN Gilroy Regular',sans-serif;
 $font-SVNGilroy-Bold: 'SVN Gilroy Bold',sans-serif;
 $font-SVNGilroy-SemiBold: 'SVN Gilroy SemiBold',sans-serif;
 $font-SVNGilroy-Medium: 'SVN Gilroy Medium',sans-serif;
+$font-SVNGilroy-XBold: 'SVN Gilroy XBold',sans-serif;
 //$font-secondary: 'Playfair Display',sans-serif;
 
 // Font-size base
 $base-font: 14px !default;
 $base-design-font: 14px !default;
+
+// width container in design
+$container: 1264px;
 
 // Grid breakpoints
 //
