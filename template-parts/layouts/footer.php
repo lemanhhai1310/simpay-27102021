@@ -49,8 +49,8 @@
                                 </div>
                                 <div>
                                     <div class="uk-grid uk-grid-16 uk-child-width-auto">
-                                        <div><a href="" class="footer__bottom__socialIcon footer__bottom__socialIcon--youtube"></a></div>
-                                        <div><a href="" class="footer__bottom__socialIcon footer__bottom__socialIcon--fb"></a></div>
+                                        <div><a uk-tooltip="Youtube" href="" class="footer__bottom__socialIcon footer__bottom__socialIcon--youtube"></a></div>
+                                        <div><a uk-tooltip="Facebook" href="" class="footer__bottom__socialIcon footer__bottom__socialIcon--fb"></a></div>
                                     </div>
                                 </div>
                             </div>
