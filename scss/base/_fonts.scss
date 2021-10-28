@@ -12,6 +12,39 @@
 }
 /**
  * --------------------------------------------------------------------
+ * SVN Gilroy
+ * --------------------------------------------------------------------
+ */
+@font-face{
+  font-family:'SVN Gilroy Regular';
+  font-display: auto;
+  src:local('SVN Gilroy Regular'), url('fonts/Font-Gilroy-VH-Full/SVN-Gilroy-Regular.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SVN Gilroy Bold';
+  font-display: auto;
+  src:local('SVN Gilroy Bold'), url('fonts/Font-Gilroy-VH-Full/SVN-Gilroy-Bold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SVN Gilroy SemiBold';
+  font-display: auto;
+  src:local('SVN Gilroy SemiBold'), url('fonts/Font-Gilroy-VH-Full/SVN-Gilroy-SemiBold.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'SVN Gilroy Medium';
+  font-display: auto;
+  src:local('SVN Gilroy Medium'), url('fonts/Font-Gilroy-VH-Full/SVN-Gilroy-Medium.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+/**
+ * --------------------------------------------------------------------
  * Verdana
  * --------------------------------------------------------------------
  */
