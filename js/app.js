@@ -50,3 +50,11 @@ window.addEventListener("load", ()=>{
         placement: 'right-start',
     });
 });
+
+jQuery(window).on("scroll",function(){
+    if( jQuery('.back-to-top').length > 0 && jQuery(window).scrollTop() > 200 ){
+        jQuery('.back-to-top').addClass('display');}
+    else{
+        jQuery('.back-to-top').removeClass('display');
+    }
+});
