@@ -25,6 +25,12 @@
 </head>
 <body class="">
 <?php require "template-parts/commons/facebook_chat.php"; ?>
+<div id="offcanvas-fillter" class="boloc__offcanvas" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <?php require "template-parts/layouts/boloc.php"; ?>
+    </div>
+</div>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 
