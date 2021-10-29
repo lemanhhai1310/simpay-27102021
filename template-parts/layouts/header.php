@@ -16,6 +16,7 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js"></script>
+    <script src="assets/placeholderTypewriter.js"></script>
     <script src="js/app.js"></script>
 </head>
 <body class="">
@@ -64,9 +65,11 @@
                                 <a href="#">Sản phẩm</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">Active</a></li>
-                                        <li><a href="#">Item</a></li>
-                                        <li><a href="#">Item</a></li>
+                                        <li class="uk-active"><a href="#">SIM COOL</a></li>
+                                        <li><a href="#">SIM BIZ</a></li>
+                                        <li><a href="#">SIM SANG</a></li>
+                                        <li><a href="#">SIM MAY</a></li>
+                                        <li><a href="#">SIM PAL</a></li>
                                     </ul>
                                 </div>
                             </li>
