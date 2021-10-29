@@ -283,11 +283,69 @@
     }
   }
   &__tooltip{
+    $x:20px;
+    &__box{
+      >*{
+        &:nth-child(n+2){
+          margin-top: 10px;
+        }
+      }
+    }
     &__card{
       width: 357px;
       background: #FCFCFD;
       box-shadow: 0px 8px 64px rgba(31, 47, 70, 0.1);
       border-radius: 8px;
+      padding: 30px;
+      >*{
+        &:nth-child(n+2){
+          margin-top: #{$x} !important;
+        }
+      }
+      .uk-accordion-content,
+      .uk-accordion-title{
+        color: #141416;
+        line-height: (16/14);
+        @extend .fz-14;
+        font-family: $font-SVNGilroy-Medium;
+      }
+      .uk-accordion{
+        border-top: 1px solid #E6E8EC;
+        border-bottom: 1px solid #E6E8EC;
+        padding: #{$x} 0;
+      }
+      .uk-accordion-title{
+        &:before{
+          background-repeat: no-repeat;
+          background-position: center;
+          background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9.79289 7.79289C9.40237 8.18342 9.40237 8.81658 9.79289 9.20711L12.5858 12L9.79289 14.7929C9.40237 15.1834 9.40237 15.8166 9.79289 16.2071C10.1834 16.5976 10.8166 16.5976 11.2071 16.2071L14.7071 12.7071C15.0976 12.3166 15.0976 11.6834 14.7071 11.2929L11.2071 7.79289C10.8166 7.40237 10.1834 7.40237 9.79289 7.79289Z' fill='%23141416'/%3E%3C/svg%3E%0A");
+        }
+      }
+      .uk-open{
+        .uk-accordion-title{
+          &:before{
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z' fill='%23141416'/%3E%3C/svg%3E%0A");
+          }
+        }
+      }
+    }
+    &__labelPrice{
+      color: #777E90;
+      line-height: (16/14);
+      @extend .fz-14;
+      font-family: $font-SVNGilroy-Medium;
+      span{
+        color: #64B73B;
+      }
+      &--sosim{
+        color: #01221D;
+      }
+    }
+    &__txtPrice{
+      color: #212B36;
+      line-height: (24/18);
+      font-family: $font-SVNGilroy-SemiBold;
+      @extend .fz-18;
     }
   }
   &__sanpham{

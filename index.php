@@ -228,14 +228,6 @@ $isCart = rand(false,true);
                             </div>
                         </div>
 
-                        <!--tooltip-->
-                        <div class="uk-card uk-card-body uk-card-default home__tooltip__card">
-                            <div>
-                                
-                            </div>
-                        </div>
-                        <!--/tooltip-->
-
                     </div>
                 </div>
             </div>
