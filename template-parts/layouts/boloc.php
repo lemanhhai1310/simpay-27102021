@@ -76,7 +76,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-2">
-                    <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Loại số</label>
+                    <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Đầu số</label>
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <div class="uk-width-1-2">
-                    <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Đầu số</label>
+                    <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Loại số</label>
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>

@@ -49,6 +49,29 @@ window.addEventListener("load", ()=>{
         followCursor: true,
         placement: 'right-start',
     });
+
+
+    let showPassword = false
+    const ipnElement = document.querySelector('#ipnPassword')
+    const btnElement = document.querySelector('#btnPassword')
+
+    btnElement.addEventListener('click', togglePassword)
+
+    function togglePassword() {
+        if (showPassword) {
+            // Đang hiện password
+            // Chuyển sang ẩn password
+            ipnElement.setAttribute('type', 'password')
+            showPassword = false
+        } else {
+            // Đang ẩn password
+            // Chuyển sang hiện password
+            ipnElement.setAttribute('type', 'text')
+            showPassword = true
+        }
+    }
+
+    UIkit.modal('#modal-forgotPass').show();
 });
 
 jQuery(window).on("scroll",function(){

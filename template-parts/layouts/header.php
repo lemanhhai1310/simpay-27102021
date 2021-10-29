@@ -24,16 +24,24 @@
     <script src="js/app.js"></script>
 </head>
 <body class="">
+<?php
+$isLogin = rand(false,true);
+$isNotify = rand(false,true);
+$isCart = rand(false,true);
+?>
 <?php require "template-parts/commons/facebook_chat.php"; ?>
+<?php if (!isset($isAccount)): ?>
 <div id="offcanvas-fillter" class="boloc__offcanvas" uk-offcanvas="flip: true; overlay: true">
     <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <?php require "template-parts/layouts/boloc.php"; ?>
     </div>
 </div>
+<?php endif; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 
+    <?php if (!isset($isAccount)): ?>
     <!--header-->
     <div class="header">
         <!--header__top-->
@@ -183,7 +191,7 @@
                                     </div>
                                 </div>
                             <?php else: ?>
-                                <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
+                                <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
                                 <a href="" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
                             <?php endif; ?>
                         </div>
@@ -198,3 +206,6 @@
         <!--/header__bottom-->
     </div>
     <!--/header-->
+    <?php else: ?>
+
+    <?php endif; ?>

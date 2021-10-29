@@ -1,3 +1,4 @@
+    <?php if (!isset($isAccount)): ?>
     <!--footer-->
     <div class="footer">
         <!--footer__top-->
@@ -178,6 +179,9 @@
         <!--/footer__bottom-->
     </div>
     <!--/footer-->
+    <?php else: ?>
+
+    <?php endif; ?>
 </div>
 <!--/app-->
 <!--backtop-->

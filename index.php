@@ -1,9 +1,4 @@
 <?php $data["title"] = "Trang chủ"; ?>
-<?php
-$isLogin = rand(false,true);
-$isNotify = rand(false,true);
-$isCart = rand(false,true);
-?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--Slider-->
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 1440:423; min-height: 240; animation: push">
