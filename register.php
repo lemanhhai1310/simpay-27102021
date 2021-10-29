@@ -1,4 +1,4 @@
-<?php $data["title"] = "Login"; ?>
+<?php $data["title"] = "Register"; ?>
 <?php $isAccount=true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-flex" uk-height-viewport uk-toggle="cls: uk-flex-middle; mode: media; media: @m">
@@ -19,7 +19,7 @@
                                     <form>
                                         <fieldset class="uk-fieldset">
 
-                                            <legend class="uk-legend login__box__form__title">Đăng nhập</legend>
+                                            <legend class="uk-legend login__box__form__title">Đăng ký</legend>
 
                                             <div class="uk-margin">
                                                 <div class="uk-inline uk-width-1-1">
@@ -34,24 +34,24 @@
                                                     <span id="btnPassword" class="login__box__form__showPass"></span>
                                                 </div>
                                             </div>
-
-                                            <div class="uk-margin login__box__form__box">
-                                                <div class="uk-child-width-auto uk-flex-middle uk-flex-between" uk-grid>
-                                                    <div>
-                                                        <label><input class="uk-checkbox login__box__form__box__check" type="checkbox" checked> <span class="login__box__form__box__txt">Remember</span></label>
-                                                    </div>
-                                                    <div>
-                                                        <a href="#modal-forgotPass" uk-toggle class="login__box__form__box__forGotpass">Quên mật khẩu?</a>
-                                                    </div>
+                                            <div class="uk-margin">
+                                                <div class="uk-inline uk-width-1-1">
+                                                    <span class="uk-form-icon login__box__form__icon login__box__form__icon--pass" uk-icon="icon: user"></span>
+                                                    <input id="ipnPassword-confirm" class="uk-input login__box__form__input" type="password" placeholder="Nhập lại mật khẩu">
+                                                    <span id="btnPassword-confirm" class="login__box__form__showPass"></span>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></button>
+
+                                            <div class="uk-margin uk-text-center register__txt">
+                                                Với việc ấn vào nút “Đăng ký", Tôi đồng ý với <a href="">Điều khoản và Chính sách</a> của SIMPAY
+                                            </div>
+                                            <button type="button" uk-toggle="target: #modal-registerSuccess" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng ký</span></button>
 
                                         </fieldset>
                                     </form>
                                 </div>
                                 <div>
-                                    <div class="uk-text-center login__box__txt1">Bạn chưa có tài khoản SIMPAY? <a href="register.php">Đăng ký ngay</a></div>
+                                    <div class="uk-text-center login__box__txt1">Bạn đã có tài khoản? <a href="login.php">Đăng nhập</a></div>
                                 </div>
                             </div>
                         </div>
@@ -61,20 +61,16 @@
         </div>
     </div>
 </div>
-<!--Quên mật khẩu?-->
-<div id="modal-forgotPass" class="uk-flex-top" uk-modal>
+<!--Đăng ký thành công-->
+<div id="modal-registerSuccess" class="uk-flex-top" uk-modal>
     <div class="uk-modal-dialog login__modal__dialog uk-modal-body uk-margin-auto-vertical">
 
         <button class="uk-modal-close-default login__modal__close" type="button" uk-close></button>
-        <h2 class="uk-modal-title login__modal__title">Quên mật khẩu</h2>
-        <p class="login__modal__desc">Chúng tôi sẽ gửi link khôi phục tài khoản vào mail của bạn. Hãy kiểm tra mail của bạn nhé!</p>
-
-        <div class="uk-margin uk-form-stacked">
-            <label class="uk-form-label login__modal__label" for="form-stacked-text">Email</label>
-            <div class="uk-form-controls">
-                <input class="uk-input login__modal__input" id="form-stacked-text" type="email" placeholder="Ví dụ: Infor@gmail.com">
-            </div>
+        <div class="uk-margin-small uk-text-center">
+            <img src="images/Yay.png" alt="">
         </div>
+        <p class="login__modal__desc uk-text-center">Bạn đã đăng ký thành công tài khoản SIMPAY. Hãy trải nghiệm những dịch vụ tuyệt vời nhé!</p>
+
         <div class="uk-grid-8" uk-grid>
             <div class="uk-width-1-1">
                 <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Gửi</span></button>
@@ -85,5 +81,5 @@
         </div>
     </div>
 </div>
-<!--/Quên mật khẩu?-->
+<!--/Đăng ký thành công-->
 <?php require "template-parts/layouts/footer.php"; ?>

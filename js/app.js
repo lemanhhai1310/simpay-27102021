@@ -52,10 +52,14 @@ window.addEventListener("load", ()=>{
 
 
     let showPassword = false
+    let showPasswordConfirm = false
     const ipnElement = document.querySelector('#ipnPassword')
     const btnElement = document.querySelector('#btnPassword')
+    const ipnElementConfirm = document.querySelector('#ipnPassword-confirm')
+    const btnElementConfirm = document.querySelector('#btnPassword-confirm')
 
     btnElement.addEventListener('click', togglePassword)
+    btnElementConfirm.addEventListener('click', togglePasswordConfirm)
 
     function togglePassword() {
         if (showPassword) {
@@ -70,8 +74,21 @@ window.addEventListener("load", ()=>{
             showPassword = true
         }
     }
+    function togglePasswordConfirm() {
+        if (showPasswordConfirm) {
+            // Đang hiện password
+            // Chuyển sang ẩn password
+            ipnElementConfirm.setAttribute('type', 'password')
+            showPasswordConfirm = false
+        } else {
+            // Đang ẩn password
+            // Chuyển sang hiện password
+            ipnElementConfirm.setAttribute('type', 'text')
+            showPasswordConfirm = true
+        }
+    }
 
-    UIkit.modal('#modal-forgotPass').show();
+    // UIkit.modal('#modal-registerSuccess').show();
 });
 
 jQuery(window).on("scroll",function(){

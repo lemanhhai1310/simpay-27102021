@@ -192,7 +192,7 @@ $isCart = rand(false,true);
                                 </div>
                             <?php else: ?>
                                 <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
-                                <a href="" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
+                                <a href="register.php" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
                             <?php endif; ?>
                         </div>
                         <div class="uk-navbar-item uk-hidden@m">
