@@ -141,7 +141,7 @@ $isCart = rand(false,true);
             </div>
         </div>
         <div class="home__content">
-            <div class="uk-grid-divider" uk-grid>
+            <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
                     <div class="uk-section-xsmall home__content__section">
                         <?php require "template-parts/layouts/boloc.php"; ?>

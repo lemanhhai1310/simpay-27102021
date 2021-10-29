@@ -28,8 +28,14 @@
       padding-left: 20px;
       border-radius: 8px;
       border: 1px solid #E6E8EC;
-      line-height: 44px;
+      @include media-breakpoint-up('m'){
+        line-height: 44px;
+      }
       position: relative;
+      text-align: left;
+      .boloc__offcanvas &{
+        border: 1px solid #E6E8EC;
+      }
       >*{
         &:first-child{
           color: #202020;
