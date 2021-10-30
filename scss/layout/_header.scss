@@ -24,6 +24,7 @@
     &.uk-sticky-fixed{
       //box-shadow: 0 5px 15px rgba(0,0,0,0.08);
       box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
+      z-index: 999;
     }
     .uk-logo{
       img{

@@ -138,7 +138,7 @@
         <div class="home__content">
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
-                    <div class="uk-section-xsmall home__content__section">
+                    <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 80; bottom: true;">
                         <?php require "template-parts/layouts/boloc.php"; ?>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                         </div>
                         <div class="home__content__mb77">
                             <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-32-m home__content__sanpham__grid" uk-grid>
-                                <?php for ($i=1;$i<=15;$i++): ?>
+                                <?php for ($i=1;$i<=45;$i++): ?>
                                 <div>
                                     <div class="uk-card uk-card-default uk-card-body home__content__sanpham__card">
                                         <?php if ($i<=6): ?>
