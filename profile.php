@@ -41,7 +41,7 @@
                 <div uk-grid>
                     <div class="uk-width-auto@m">
                         <div class="profile__width">
-                            <h3 class="uk-h3 profile__content__title">Quản lý tài khoản</h3>
+                            <h1 class="uk-h1 profile__content__title">Quản lý tài khoản</h1>
                             <form class="uk-form-stacked">
                                 <fieldset class="uk-fieldset">
 

@@ -165,7 +165,7 @@ $isCart = rand(false,true);
                                                     <div class="" uk-dropdown="mode: hover">
                                                         <ul class="uk-nav uk-nav-default">
                                                             <li class="acc"><a href="profile.php">Tài khoản của tôi</a></li>
-                                                            <li class="history"><a href="#">Lịch sử giao dịch</a></li>
+                                                            <li class="history"><a href="lichsugiaodich.php">Lịch sử giao dịch</a></li>
                                                             <li class="logout"><a href="login.php">Thoát tài khoản</a></li>
                                                         </ul>
                                                     </div>

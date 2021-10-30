@@ -113,6 +113,9 @@
       @extend .fz-32;
       font-family: $font-SVNGilroy-XBold;
       @include fluidx(42px,20px,margin-bottom);
+      .lichsu__section &{
+        margin-bottom: 24px !important;
+      }
     }
   }
   &__form{
