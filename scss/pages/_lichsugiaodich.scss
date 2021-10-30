@@ -1,6 +1,9 @@
 .lichsu{
   &__section{
-
+    @include media-breakpoint-up('m'){
+      padding-top: 32px;
+      padding-bottom: 48px;
+    }
   }
   &__table{
     border: 1px solid #E6E8EC;

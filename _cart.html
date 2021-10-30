@@ -4,13 +4,13 @@
 <head>
     <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>SimPay - Lịch sử giao dịch</title>
+    <title>SimPay - Giỏ hàng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <!--CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1635591381">
+    <link rel="stylesheet" href="style.css?v=1635607628">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -385,61 +385,102 @@
         <div class="uk-container uk-padding-remove">
             <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
                 <li><a href=".">Trang chủ</a></li>
-                <li><span>Lịch sử giao dịch</span></li>
+                <li><a href="">Tìm sim</a></li>
+                <li><span>Giỏ hàng</span></li>
             </ul>
         </div>
     </div>
-    <!--/breadcrumb--><div class="uk-section-small lichsu__section">
+    <!--/breadcrumb--><div class="uk-section-small cart__section">
     <div class="uk-container">
-        <h1 class="uk-h1 profile__content__title">Lịch sử giao dịch</h1>
-        <table class="uk-table uk-table-divider uk-table-responsive lichsu__table">
-            <thead>
-            <tr>
-                <th>Thứ tự</th>
-                <th>Ngày</th>
-                <th>Loại sim</th>
-                <th>Số thuê bao</th>
-                <th>Nhà mạng</th>
-                <th>Hình thức thanh toán</th>
-                <th>Giá</th>
-                <th>Trạng thái</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><span class="lichsu__table__txt">01</span></td>
-                <td><span class="lichsu__table__txt">02.04.2021</span></td>
-                <td><span class="lichsu__table__txt">Trả trước</span></td>
-                <td><span class="lichsu__table__txt">0123.556.888</span></td>
-                <td><span class="lichsu__table__txt">Viettel</span></td>
-                <td><span class="lichsu__table__txt">Thanh toán trực tiếp</span></td>
-                <td><span class="lichsu__table__txt">1.800.000đ</span></td>
-                <td><div class="uk-label uk-label-success lichsu__table__status"><span>Đã thanh toán</span></div></td>
-            </tr>
-            <tr>
-                <td><span class="lichsu__table__txt">02</span></td>
-                <td><span class="lichsu__table__txt">02.04.2021</span></td>
-                <td><span class="lichsu__table__txt">Trả trước</span></td>
-                <td><span class="lichsu__table__txt">0123.556.888</span></td>
-                <td><span class="lichsu__table__txt">Viettel</span></td>
-                <td><span class="lichsu__table__txt">Thanh toán trực tiếp</span></td>
-                <td><span class="lichsu__table__txt">1.800.000đ</span></td>
-                <td><div class="uk-label uk-label-success lichsu__table__status"><span>Đã thanh toán</span></div></td>
-            </tr>
-            <tr>
-                <td><span class="lichsu__table__txt">03</span></td>
-                <td><span class="lichsu__table__txt">02.04.2021</span></td>
-                <td><span class="lichsu__table__txt">Trả trước</span></td>
-                <td><span class="lichsu__table__txt">0123.556.888</span></td>
-                <td><span class="lichsu__table__txt">Viettel</span></td>
-                <td><span class="lichsu__table__txt">Thanh toán trực tiếp</span></td>
-                <td><span class="lichsu__table__txt">1.800.000đ</span></td>
-                <td><div class="uk-label uk-label-success lichsu__table__status"><span>Đã thanh toán</span></div></td>
-            </tr>
-            </tbody>
-        </table>
+        <h1 class="uk-h1 profile__content__title">Giỏ hàng của tôi</h1>
+        <div class="uk-grid uk-grid-16 uk-child-width-auto" uk-grid>
+            <div>
+                <a href="" class="uk-button uk-active cart__btnMenu uk-button-default"><span>Wish list</span></a>
+            </div>
+            <div>
+                <a href="" class="uk-button cart__btnMenu uk-button-default"><span>Đã đặt</span></a>
+            </div>
+            <div>
+                <a href="" class="uk-button cart__btnMenu uk-button-default"><span>Đang giao hàng</span></a>
+            </div>
+        </div>
+        <div class="uk-child-width-1-3@m cart__grid uk-grid-small uk-grid-32-m" uk-grid>
+            <div>
+                <div class="uk-card cart__card uk-card-default uk-card-body">
+                    <a href="#modal-trash" class="cart__card__trash" uk-toggle></a>
+                    <div class="home__content__sanpham__mb">
+                        <div class="home__content__sanpham__phoneNumber">056.780.<span>6666</span></div>
+                        <span class="home__content__sanpham__info"></span>
+                    </div>
+                    <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
+                        <div>
+                            <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
+                        </div>
+                        <div>
+                            <span class="home__content__sanpham__priceTxt">1.800.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cart__card__box">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                            <div>
+                                <div class="cart__card__quantam"><span>2,500 quan tâm</span></div>
+                            </div>
+                            <div>
+                                <button type="button" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Mua ngay</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card cart__card uk-card-default uk-card-body">
+                    <a href="#modal-trash" class="cart__card__trash" uk-toggle></a>
+                    <div class="home__content__sanpham__mb">
+                        <div class="home__content__sanpham__phoneNumber">056.780.<span>6666</span></div>
+                        <span class="home__content__sanpham__info"></span>
+                    </div>
+                    <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
+                        <div>
+                            <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
+                        </div>
+                        <div>
+                            <span class="home__content__sanpham__priceTxt">1.800.000đ</span>
+                        </div>
+                    </div>
+                    <div class="cart__card__box">
+                        <div class="uk-child-width-auto uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
+                            <div>
+                                <div class="cart__card__quantam"><span>2,500 quan tâm</span></div>
+                            </div>
+                            <div>
+                                <button type="button" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Mua ngay</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+    <!--Xoá thẻ-->
+    <div id="modal-trash" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog login__modal__dialog uk-modal-body uk-margin-auto-vertical">
+
+            <button class="uk-modal-close-default login__modal__close" type="button" uk-close></button>
+            <h2 class="uk-modal-title login__modal__title">Xoá thẻ</h2>
+            <p class="login__modal__desc">Bạn có chắc chẵn muốn xoá thẻ khỏi giỏ hàng không? Giữ lại thẻ trong giỏ sẽ đỡ tốn thời gian tìm lại thẻ đó</p>
+
+            <div class="uk-grid-8" uk-grid>
+                <div class="uk-width-1-1">
+                    <button type="submit" class="login__box__form__btnSubmit login__box__form__btnSubmit--trash uk-button uk-button-secondary uk-width-1-1"><span>Đồng ý xoá thẻ</span></button>
+                </div>
+                <div class="uk-width-1-1">
+                    <button type="submit" class="uk-modal-close login__box__form__btnSubmit uk-button uk-button-default uk-width-1-1"><span>Quay lại</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/Xoá thẻ-->
     <!--footer-->
     <div class="footer">
         <!--footer__top-->

@@ -175,7 +175,7 @@ $isCart = rand(false,true);
                                     </div>
                                     <div>
                                         <div class="uk-inline">
-                                            <div class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></div>
+                                            <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
                                             <div class="" uk-dropdown="mode: hover">
                                                 <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
                                                 <?php if ($isCart): ?>

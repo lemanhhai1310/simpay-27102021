@@ -1,6 +1,7 @@
 .footer{
   background: #FCFCFD;
   &__top{
+    border-top: 1px solid #E6E8EC;
     @include media-breakpoint-up('m'){
       background-color: #fff;
       border-top: 1px solid #E6E8EC;

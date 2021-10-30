@@ -26,6 +26,14 @@
         border-radius: 8px;
         background: #3772FF;
         text-transform: inherit;
+        &--trash{
+          background: #E73C3D;
+        }
+        .cart__card &{
+          @include media-breakpoint-down('s'){
+            padding: 0 15px;
+          }
+        }
         &:hover{
           //background: rgba(#3772FF,0.7);
         }
