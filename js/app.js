@@ -58,8 +58,12 @@ window.addEventListener("load", ()=>{
     const ipnElementConfirm = document.querySelector('#ipnPassword-confirm')
     const btnElementConfirm = document.querySelector('#btnPassword-confirm')
 
-    btnElement.addEventListener('click', togglePassword)
-    btnElementConfirm.addEventListener('click', togglePasswordConfirm)
+    if (btnElement){
+        btnElement.addEventListener('click', togglePassword)
+    }
+    if (btnElementConfirm){
+        btnElementConfirm.addEventListener('click', togglePasswordConfirm)
+    }
 
     function togglePassword() {
         if (showPassword) {
@@ -88,7 +92,7 @@ window.addEventListener("load", ()=>{
         }
     }
 
-    // UIkit.modal('#modal-registerSuccess').show();
+    // UIkit.modal('#modal-package').show();
 });
 
 jQuery(window).on("scroll",function(){

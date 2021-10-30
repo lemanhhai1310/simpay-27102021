@@ -29,6 +29,11 @@
         &--trash{
           background: #E73C3D;
         }
+        #modal-package &{
+          @include media-breakpoint-up('m'){
+            max-width: 279px !important;
+          }
+        }
         .cart__card &{
           @include media-breakpoint-down('s'){
             padding: 0 15px;
@@ -163,10 +168,14 @@
       }
     }
     &__dialog{
-      width: 400px;
+      width: 100%;
+      max-width: 400px !important;
       padding: 20px;
       @include media-breakpoint-up('m'){
         padding: 32px;
+      }
+      &--m{
+        max-width: 888px !important;
       }
     }
     &__title{
@@ -201,5 +210,10 @@
       padding-left: 0;
       padding-right: 0;
     }
+  }
+}
+.uk-modal{
+  &:focus-visible{
+    outline: none;
   }
 }
