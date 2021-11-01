@@ -1,7 +1,8 @@
 <?php $data["title"] = "Register"; ?>
 <?php $isAccount=true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="uk-flex" uk-height-viewport uk-toggle="cls: uk-flex-middle; mode: media; media: @m">
+<div class="uk-flex uk-position-relative" uk-height-viewport uk-toggle="cls: uk-flex-middle; mode: media; media: @m">
+    <a href="." class="uk-modal-close-default login__modal__close uk-icon uk-close" type="button" uk-close=""></a>
     <div class="uk-width-1-1" uk-toggle="cls: uk-section-small; mode: media; media: @m">
         <div class="uk-container" uk-toggle="cls: uk-padding-remove; mode: media; media: (max-width: 959px)">
             <div class="uk-grid-match uk-grid-0 uk-grid-40-m uk-grid-108-l" uk-grid>

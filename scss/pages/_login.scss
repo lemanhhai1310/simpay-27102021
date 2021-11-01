@@ -154,8 +154,14 @@
     &__close{
       border: 2px solid #E6E8EC;
       box-sizing: border-box;
-      width: 40px;
-      height: 40px;
+      $x:35px;
+      width: #{$x};
+      height: #{$x};
+      @include media-breakpoint-up('m'){
+        $x:40px;
+        width: #{$x};
+        height: #{$x};
+      }
       border-radius: 50%;
       background-position: center;
       background-repeat: no-repeat;

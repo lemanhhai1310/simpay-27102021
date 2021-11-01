@@ -250,6 +250,58 @@
                 </div>
             </div>
         </div>
+        <div class="uk-section-small">
+            <h2 class="uk-h2 profile__content__title uk-text-center">Đơn hàng mới</h2>
+            <div class="uk-grid-small uk-child-width-1-3@m uk-grid-20-m" uk-grid>
+                <?php for ($i=1;$i<=6;$i++): ?>
+                <div>
+                    <div class="uk-card home__donhang__card uk-card-default uk-card-body">
+                        <div class="home__donhang__item">
+                            <div>
+                                <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
+                                    <div>
+                                        <div class="home__donhang__name">Trần M*** N***</div>
+                                    </div>
+                                    <div>
+                                        <div class="home__donhang__sim">SIM <span style="color: #3772FF">COOL</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
+                                    <div>
+                                        <div class="home__donhang__so">Sim số: <span>0586.779.666</span></div>
+                                    </div>
+                                    <div>
+                                        <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="home__donhang__item">
+                            <div class="uk-grid-0-s uk-grid-10 uk-grid-match" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="home__donhang__box uk-flex uk-flex-middle uk-width-1-1">
+                                        <div class="uk-grid-16 uk-child-width-1-2 uk-flex-center uk-flex-middle uk-width-1-1" uk-grid>
+                                            <div>
+                                                <div class="home__donhang__txt home__donhang__txt--date line-clamp-1">06, June 2021</div>
+                                            </div>
+                                            <div>
+                                                <div class="home__donhang__txt home__donhang__txt--money line-clamp-1">MDwjfkljklg9824</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-auto@s">
+                                    <div class="uk-button uk-width-1-1 uk-button-primary home__donhang__price">1.800.000đ</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <?php endfor; ?>
+            </div>
+        </div>
     </div>
 </div>
 <?php require "template-parts/layouts/footer.php"; ?>
