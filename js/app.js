@@ -94,6 +94,27 @@ window.addEventListener("load", ()=>{
 
     // UIkit.modal('#modal-package').show();
     // UIkit.modal('#modal-register').show();
+
+    let btnMenu = document.querySelector("#btnMenu");
+    let menumobile = document.querySelector(".menumobile");
+    let body = document.querySelector("body");
+    let html = document.querySelector("html");
+    if(btnMenu){
+        btnMenu.addEventListener("click", ()=>{
+            btnMenu.classList.toggle("open");
+            if(btnMenu.classList.contains("open")){
+                menumobile.classList.add("animated");
+                menumobile.classList.add("fadeInDown");
+                body.classList.add("uk-overflow-hidden");
+                html.classList.add("uk-overflow-hidden");
+            }else {
+                menumobile.classList.remove("animated");
+                menumobile.classList.remove("fadeInDown");
+                body.classList.remove("uk-overflow-hidden");
+                html.classList.remove("uk-overflow-hidden");
+            }
+        });
+    }
 });
 
 jQuery(window).on("scroll",function(){
