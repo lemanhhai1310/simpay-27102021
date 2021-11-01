@@ -25,7 +25,7 @@
 </head>
 <body class="">
 <?php
-$isLogin = rand(false,true);
+$isLogin = rand(false,false);
 $isNotify = rand(false,true);
 $isCart = rand(false,true);
 $isWishList = rand(false,true);
@@ -181,8 +181,8 @@ $isWishList = rand(false,true);
                                 <!--/wishlist-->
                                 <?php else: ?>
                                 <div>
-                                    <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
-                                    <a href="register.php" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
+                                    <a href="#modal-login" uk-toggle class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
+                                    <a href="#modal-register" uk-toggle class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
                                 </div>
                                 <?php endif; ?>
                                 <div>

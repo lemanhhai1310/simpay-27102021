@@ -93,6 +93,7 @@ window.addEventListener("load", ()=>{
     }
 
     // UIkit.modal('#modal-package').show();
+    // UIkit.modal('#modal-register').show();
 });
 
 jQuery(window).on("scroll",function(){
