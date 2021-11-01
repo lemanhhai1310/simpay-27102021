@@ -28,6 +28,7 @@
 $isLogin = rand(false,true);
 $isNotify = rand(false,true);
 $isCart = rand(false,true);
+$isWishList = rand(false,true);
 ?>
 <?php require "template-parts/commons/facebook_chat.php"; ?>
 <?php if (!isset($isAccount)): ?>
@@ -173,27 +174,32 @@ $isCart = rand(false,true);
                                             </div>
                                         </div>
                                     </div>
+                                    <!--wishlist-->
                                     <div>
-                                        <div class="uk-inline">
-                                            <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
-                                            <div class="" uk-dropdown="mode: hover">
-                                                <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
-                                                <?php if ($isCart): ?>
-
-                                                <?php else: ?>
-                                                <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
-                                                <?php endif; ?>
-                                                <div class="uk-text-center">
-                                                    <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="" class="header__bottom__wishList__icon <?= ($isWishList)?'uk-active':'' ?>"></a>
                                     </div>
+                                    <!--/wishlist-->
                                 </div>
                             <?php else: ?>
                                 <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
                                 <a href="register.php" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
                             <?php endif; ?>
+                        </div>
+                        <div class="uk-navbar-item uk-visible@m">
+                            <div class="uk-inline">
+                                <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
+                                <div class="" uk-dropdown="mode: hover">
+                                    <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
+                                    <?php if ($isCart): ?>
+
+                                    <?php else: ?>
+                                        <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
+                                    <?php endif; ?>
+                                    <div class="uk-text-center">
+                                        <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="uk-navbar-item uk-hidden@m">
 
