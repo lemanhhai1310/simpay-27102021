@@ -150,53 +150,55 @@ $isWishList = rand(false,true);
                             </div>
                         </div>
                         <div class="uk-navbar-item uk-visible@m">
-                            <?php if ($isLogin): ?>
-                                <div class="uk-flex-middle uk-child-width-auto uk-grid-small uk-grid-24-m" uk-grid>
-                                    <div>
-                                        <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>
-                                            <div>
-                                                <div class="header__user__txt">Xin chào, <span>Hai</span></div>
-                                            </div>
-                                            <div>
-                                                <div class="uk-inline">
-                                                    <div class="uk-cover-container uk-border-circle header__bottom__profile">
-                                                        <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover>
-                                                        <canvas width="40" height="40"></canvas>
-                                                    </div>
-                                                    <div class="" uk-dropdown="mode: hover">
-                                                        <ul class="uk-nav uk-nav-default">
-                                                            <li class="acc"><a href="profile.php">Tài khoản của tôi</a></li>
-                                                            <li class="history"><a href="lichsugiaodich.php">Lịch sử giao dịch</a></li>
-                                                            <li class="logout"><a href="login.php">Thoát tài khoản</a></li>
-                                                        </ul>
-                                                    </div>
+                            <div class="uk-flex-middle uk-child-width-auto uk-grid-small uk-grid-24-m" uk-grid>
+                                <?php if ($isLogin): ?>
+                                <div>
+                                    <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>
+                                        <div>
+                                            <div class="header__user__txt">Xin chào, <span>Hai</span></div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-inline">
+                                                <div class="uk-cover-container uk-border-circle header__bottom__profile">
+                                                    <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover>
+                                                    <canvas width="40" height="40"></canvas>
+                                                </div>
+                                                <div class="" uk-dropdown="mode: hover">
+                                                    <ul class="uk-nav uk-nav-default">
+                                                        <li class="acc"><a href="profile.php">Tài khoản của tôi</a></li>
+                                                        <li class="history"><a href="lichsugiaodich.php">Lịch sử giao dịch</a></li>
+                                                        <li class="logout"><a href="login.php">Thoát tài khoản</a></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <!--wishlist-->
-                                    <div>
-                                        <a href="" class="header__bottom__wishList__icon <?= ($isWishList)?'uk-active':'' ?>"></a>
-                                    </div>
-                                    <!--/wishlist-->
                                 </div>
-                            <?php else: ?>
-                                <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
-                                <a href="register.php" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
-                            <?php endif; ?>
-                        </div>
-                        <div class="uk-navbar-item uk-visible@m">
-                            <div class="uk-inline">
-                                <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
-                                <div class="" uk-dropdown="mode: hover">
-                                    <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
-                                    <?php if ($isCart): ?>
+                                <!--wishlist-->
+                                <div>
+                                    <a href="" class="header__bottom__wishList__icon <?= ($isWishList)?'uk-active':'' ?>"></a>
+                                </div>
+                                <!--/wishlist-->
+                                <?php else: ?>
+                                <div>
+                                    <a href="login.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Đăng nhập</a>
+                                    <a href="register.php" class="uk-button uk-button-default header__bottom__btn header__bottom__btn--register">Đăng ký</a>
+                                </div>
+                                <?php endif; ?>
+                                <div>
+                                    <div class="uk-inline">
+                                        <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
+                                        <div class="" uk-dropdown="mode: hover">
+                                            <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
+                                            <?php if ($isCart): ?>
 
-                                    <?php else: ?>
-                                        <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
-                                    <?php endif; ?>
-                                    <div class="uk-text-center">
-                                        <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
+                                            <?php else: ?>
+                                                <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
+                                            <?php endif; ?>
+                                            <div class="uk-text-center">
+                                                <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
