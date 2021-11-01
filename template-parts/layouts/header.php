@@ -94,7 +94,7 @@ $isCart = rand(false,true);
                             <li><a href="#">Tìm Sim*</a></li>
                             <li><a href="#">Gói cước</a></li>
                             <li><a href="#">Thanh toán</a></li>
-                            <li><a href="#">Liên hệ</a></li>
+                            <li><a href="lienhe.php">Liên hệ</a></li>
                         </ul>
                         <div class="uk-navbar-item header__bottom__divider uk-visible@m">
                             <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>

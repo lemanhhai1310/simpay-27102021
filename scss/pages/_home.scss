@@ -219,7 +219,14 @@
         font-family: $font-SVNGilroy-Medium;
       }
     }
+    &__box{
+      .uk-sticky-fixed> &{
+        display: none;
+      }
+    }
     &__card{
+      background-color: #fff;
+      z-index: 981;
       box-shadow: 0px 4px 60px rgba(27, 25, 86, 0.1);
       border-radius: 16px;
       padding: 15px;

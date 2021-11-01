@@ -5,7 +5,8 @@
 
     <ul class="uk-slideshow-items">
         <li>
-            <img src="images/banner1.png" alt="" uk-cover>
+            <img class="uk-visible@m" src="images/banner1.png" alt="" uk-cover>
+            <img class="uk-hidden@m" src="images/Group4185.png" alt="" uk-cover>
         </li>
         <li>
             <img src="images/photo.jpg" alt="" uk-cover>
@@ -78,8 +79,8 @@
         </div>
     </div>
     <div class="uk-container">
-        <div class="uk-card uk-card-default uk-card-body home__search__card uk-visible@m">
-            <div class="uk-text-center uk-margin-bottom">
+        <div class="uk-card uk-card-default uk-card-body home__search__card uk-visible@m" uk-sticky="offset: 90">
+            <div class="uk-text-center uk-margin-bottom home__search__box">
                 <h3 class="uk-card-title home__search__title">Tìm kiếm SIM</h3>
                 <div class=""><a href="" class="home__search__link">Hướng dẫn tìm SIM ưng ý</a></div>
             </div>
@@ -129,16 +130,16 @@
                     'Sim số đẹp',
                 );
                 foreach ($data as $k=>$v): ?>
-                <div>
-                    <a href="" class="uk-button uk-button-default home__search__tag"><span><?= $v ?></span></a>
-                </div>
+                    <div>
+                        <a href="" class="uk-button uk-button-default home__search__tag"><span><?= $v ?></span></a>
+                    </div>
                 <?php endforeach; ?>
             </div>
         </div>
         <div class="home__content">
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
-                    <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 80; bottom: true;">
+                    <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 253; bottom: true;">
                         <?php require "template-parts/layouts/boloc.php"; ?>
                     </div>
                 </div>

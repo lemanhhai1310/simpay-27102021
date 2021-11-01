@@ -1,0 +1,42 @@
+.lienhe{
+  &__section{
+    @include media-breakpoint-up('m'){
+      padding-bottom: 50px;
+    }
+  }
+  &__about{
+    >*{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    color: #212B36;
+    margin-top: 20px;
+    @include media-breakpoint-up('m'){
+      position: absolute;
+      top: 16px;
+      left: 32px;
+      width: 290px;
+      color: #FFFFFF;
+      margin-top: 0;
+    }
+    &__title{
+      color: #212B36;
+      line-height: (24/16);
+      //@extend .fz-24;
+      @include fluidx(24px,16px,font-size);
+      font-family: $font-SVNGilroy-XBold;
+      margin-bottom: 10px;
+      @include media-breakpoint-up('m'){
+        line-height: (60/24);
+        margin-bottom: 7px;
+        color: #FFFFFF;
+      }
+    }
+    &__desc{
+      line-height: (24/16);
+      @extend .fz-16;
+      margin: 0 !important;
+    }
+  }
+}

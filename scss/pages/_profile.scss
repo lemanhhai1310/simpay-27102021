@@ -124,6 +124,11 @@
           margin-bottom: 31px !important;
         }
       }
+      .lienhe__section &{
+        @include media-breakpoint-up('m'){
+          margin-bottom: 36px !important;
+        }
+      }
     }
   }
   &__form{
