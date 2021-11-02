@@ -167,7 +167,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                         </div>
                     </div>
                     <div class="uk-margin">
-                        <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đặt mua sim</span></button>
+                        <a href="thongtindonhang.php" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đặt mua sim</span></a>
                         <div class="uk-text-center login__box__txt1">Với việc ấn vào nút “Đặt mua", Tôi đồng ý với <a href="">Điều khoản mua hàng</a> của SIMPAY</div>
                     </div>
                 </div>
@@ -189,17 +189,30 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-cover-container">
-                                <div class="uk-position-cover">
-
+                            <div class="uk-cover-container thanhtoan__left__choosefile">
+                                <div class="uk-position-cover thanhtoan__left__choosefile__cover">
+                                    <div>
+                                        <div style="margin-bottom: 5px">
+                                            <img src="images/mobile1/quy-dinh-ve-anh-lam-chung-minh-thu-nhan-dan-13-790x10241.png" alt="">
+                                        </div>
+                                        <div uk-form-custom>
+                                            <input type="file">
+                                            <span class="uk-link">Chọn lại</span>
+                                        </div>
+                                    </div>
                                 </div>
                                 <canvas width="180" height="150"></canvas>
                             </div>
                         </div>
                         <div>
-                            <div class="uk-cover-container">
+                            <div class="uk-cover-container thanhtoan__left__choosefile">
                                 <div class="uk-position-cover">
-
+                                    <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                        <div class="uk-text-center">
+                                            <div class="thanhtoan__left__file__camera thanhtoan__left__file__camera--upload"></div>
+                                            <div class="thanhtoan__left__file__txt">Đang tải file ảnh...</div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <canvas width="180" height="150"></canvas>
                             </div>
@@ -208,9 +221,97 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                 </div>
                 <div class="thanhtoan__left__item">
                     <h3 class="uk-h3 thanhtoan__left__title">Thông tin đặt mua</h3>
+                    <form class="uk-form-stacked">
+                        <fieldset class="uk-fieldset">
+                            <div class="">
+                                <div class="uk-child-width-1-1 uk-grid-small uk-grid-24-m" uk-grid>
+                                    <div>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">HỌ VÀ TÊN*</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="Nguyễn Văn A">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">NGÀY SINH*</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <a class="profile__form__iconDate uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
+                                                <input class="uk-input profile__form__input" type="text" value="04/02/1991">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">SỐ CMND/ CCCD/ HỘ CHIẾU*</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="061092170">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">NGÀY CẤP*</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline uk-width-1-1">
+                                                <a class="profile__form__iconDate uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
+                                                <input class="uk-input profile__form__input" type="text" value="04/02/1991">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">NƠI CẤP*</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="Công an tỉnh A">
+                                        </div>
+                                    </div>
+                                    <div class="uk-width-1-2@s">
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">Quốc tịch</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
+                                                <select>
+                                                    <option value="">Việt nam</option>
+                                                    <option value="1">Option 01</option>
+                                                    <option value="2">Option 02</option>
+                                                    <option value="3">Option 03</option>
+                                                    <option value="4">Option 04</option>
+                                                </select>
+                                                <button class="profile__form__btnSelect uk-width-1-1 uk-button uk-button-default" type="button" tabindex="-1">
+                                                    <span></span>
+                                                    <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">Nơi đăng ký thường trú</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="144 Đội Cấn, Ba Đình, Hà Nội">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">Số điện thoại</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="tel" placeholder="" value="0946787200">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">ĐỊA CHỈ GIAO HÀNG</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: 208 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh " value="">
+                                        </div>
+                                    </div>
+                                    <div style="margin-top: 10px !important;">
+                                        <img src="images/mobile1/Group4140.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
                 <div class="thanhtoan__left__item">
                     <h3 class="uk-h3 thanhtoan__left__title">Hình thức thanh toán</h3>
+                    <div class="uk-margin uk-grid-10 uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
+                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio" checked=""> <span class="boloc__checkBox__txt">Thanh toán tiền mặt</span></label>
+                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trả góp</span></label>
+                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trực tuyến</span></label>
+                    </div>
                 </div>
             </div>
         </div>
