@@ -203,7 +203,10 @@
       }
     }
     &__tagGrid{
-      margin-top: 25px !important;
+      margin-top: 31px !important;
+      @include media-breakpoint-up('m'){
+        margin-left: 155px;
+      }
     }
     &__tag{
       text-transform: inherit;

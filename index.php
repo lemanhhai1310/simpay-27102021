@@ -58,7 +58,7 @@
                         <p class="home__sanpham__desc"><?= $v['desc'] ?></p>
                     </div>
                     <div class="uk-card-footer home__sanpham__footer">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay:true;autoplay-interval:10000;">
 
                             <ul class="uk-slider-items uk-child-width-1-1">
                                 <?php for ($i=0;$i<=2;$i++): ?>
@@ -119,21 +119,23 @@
                     <a href="" class="home__search__micro"></a>
                 </div>
             </div>
-            <div class="uk-child-width-auto uk-grid-12 home__search__tagGrid uk-flex-center" uk-grid>
-                <?php
-                $data = array(
-                    'Sản phẩm của SIMPAY',
-                    'Gói cước Combo',
-                    'Tìm Sim*',
-                    'Sim Phong thuỷ',
-                    'Sim năm sinh',
-                    'Sim số đẹp',
-                );
-                foreach ($data as $k=>$v): ?>
-                    <div>
-                        <a href="" class="uk-button uk-button-default home__search__tag"><span><?= $v ?></span></a>
-                    </div>
-                <?php endforeach; ?>
+            <div class="home__search__tagGrid">
+                <div class="uk-child-width-auto uk-grid-12" uk-grid>
+                    <?php
+                    $data = array(
+                        'Sản phẩm của SIMPAY',
+                        'Gói cước Combo',
+                        'Tìm Sim*',
+                        'Sim Phong thuỷ',
+                        'Sim năm sinh',
+                        'Sim số đẹp',
+                    );
+                    foreach ($data as $k=>$v): ?>
+                        <div>
+                            <a href="" class="uk-button uk-button-default home__search__tag"><span><?= $v ?></span></a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
             </div>
         </div>
         <div class="home__content">
@@ -145,7 +147,7 @@
                 </div>
                 <div class="uk-width-expand">
                     <div class="uk-section-xsmall home__content__section">
-                        <div class="uk-hidden@m uk-margin-small-bottom">
+                        <div class="uk-hidden@m uk-margin-small-bottom" uk-sticky="offset: 70">
                             <div class="uk-flex-middle uk-grid-16" uk-grid>
                                 <div class="uk-width-expand">
                                     <div class="uk-inline uk-width-1-1 home__search__mobile">

@@ -1,5 +1,5 @@
 <!--breadcrumb-->
-<div class="uk-section-xsmall uk-overflow-auto breadcrumb__section">
+<div class="uk-section-xsmall uk-overflow-auto breadcrumb__section" uk-sticky="offset: 60;media:(max-width: 959px)">
     <div class="uk-container uk-padding-remove">
         <ul class="uk-breadcrumb uk-flex uk-flex-nowrap">
             <?php if (isset($databreadcrumb)): ?>

@@ -21,7 +21,7 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="">
 <?php
@@ -94,7 +94,7 @@ $isWishList = rand(false,true);
                             </li>
                             <li><a href="#">Tìm Sim*</a></li>
                             <li><a href="#">Gói cước</a></li>
-                            <li><a href="#">Thanh toán</a></li>
+                            <li><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
                         </ul>
                         <div class="uk-navbar-item header__bottom__divider uk-visible@m">
@@ -256,7 +256,7 @@ $isWishList = rand(false,true);
                             </li>
                             <li><a href="">Tìm Sim*</a></li>
                             <li><a href="">Gói cước</a></li>
-                            <li><a href="">Thanh toán</a></li>
+                            <li><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
                         </ul>
                         <div>

@@ -43,10 +43,17 @@
   }
   &__bottom{
     background-color: #fff;
+    z-index: 999;
+    &.uk-sticky-fixed{
+      @include media-breakpoint-up('m'){
+        box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        z-index: 999;
+      }
+    }
     &.uk-sticky-below{
       //box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      z-index: 999;
+      //box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      //z-index: 999;
     }
     .uk-logo{
       img{
