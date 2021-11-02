@@ -42,7 +42,7 @@ $isWishList = rand(false,true);
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 
-    <?php if (!isset($isAccount)): ?>
+    <?php if ($isHeader): ?>
     <!--header-->
     <div class="header">
         <!--header__top-->

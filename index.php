@@ -1,4 +1,6 @@
 <?php $data["title"] = "Trang chủ"; ?>
+<?php $isHeader = true; ?>
+<?php $isFooter = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--Slider-->
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="ratio: 1440:423; min-height: 240; animation: push">

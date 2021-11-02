@@ -1,4 +1,6 @@
 <?php $data["title"] = "Liên hệ"; ?>
+<?php $isHeader = true; ?>
+<?php $isFooter = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <?php
 $databreadcrumb = array(

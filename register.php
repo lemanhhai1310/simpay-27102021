@@ -1,5 +1,6 @@
 <?php $data["title"] = "Register"; ?>
-<?php $isAccount=true; ?>
+<?php $isHeader = false; ?>
+<?php $isFooter = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-flex register uk-position-relative" uk-height-viewport uk-toggle="cls: uk-flex-middle; mode: media; media: @m">
     <a href="." class="uk-modal-close-default login__modal__close uk-icon uk-close" type="button" uk-close=""></a>

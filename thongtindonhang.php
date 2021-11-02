@@ -1,4 +1,6 @@
 <?php $data["title"] = "Thông tin đơn hàng"; ?>
+<?php $isHeader = true; ?>
+<?php $isFooter = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <?php
 $databreadcrumb = array(
@@ -171,7 +173,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
             </div>
         </div>
         <div class="uk-text-center uk-margin thongtindonhang__margin">
-            <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary"><span>Xác nhận đơn hàng</span></button>
+            <a href="donhang_success.php" class="login__box__form__btnSubmit uk-button uk-button-secondary"><span>Xác nhận đơn hàng</span></a>
         </div>
     </div>
 </div>

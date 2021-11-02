@@ -1,4 +1,6 @@
 <?php $data["title"] = "Profile"; ?>
+<?php $isHeader = true; ?>
+<?php $isFooter = true; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-section-xsmall uk-background-norepeat uk-background-cover uk-background-center-center" data-src="images/image-from-rawpixel-id-597407-jpeg1.png" uk-img>
     <div class="uk-container">

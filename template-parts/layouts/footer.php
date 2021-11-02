@@ -1,4 +1,4 @@
-    <?php if (!isset($isAccount)): ?>
+    <?php if ($isFooter): ?>
     <!--footer-->
     <div class="footer">
         <!--footer__top-->
