@@ -186,7 +186,7 @@
 <!--/app-->
 <!--backtop-->
 <a href="#" class="back-to-top" uk-scroll>
-    <img src="images/Uptop.png" alt="">
+    <img style="width: 34px;" src="images/top.png" alt="">
 </a>
 <!--/backtop-->
 <!--modal-login-->
