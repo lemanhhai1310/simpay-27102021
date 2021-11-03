@@ -88,7 +88,7 @@
         padding-top: #{$x};
         margin-top: #{$x};
         @include media-breakpoint-up('m'){
-          $x:24px;
+          $x:30px;
           padding-top: #{$x};
           margin-top: #{$x};
         }
