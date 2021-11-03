@@ -4,13 +4,24 @@
     padding-top: 0;
     padding-bottom: 0;
   }
+  &__searchmb{
+    background-color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 0 !important;
+    &.uk-sticky-fixed{
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+  }
   &__content{
     @include media-breakpoint-up('m'){
       border-top: 1px solid #E6E8EC;
       border-bottom: 1px solid #E6E8EC;
     }
     &__section{
-      padding-top: 25px;
+      padding-top: 0;
+      @include media-breakpoint-up('m'){
+        padding-top: 25px;
+      }
     }
     &__txtKetqua{
       color: #212B36;

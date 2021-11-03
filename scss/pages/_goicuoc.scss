@@ -53,7 +53,6 @@
       }
     }
     &__btn{
-      background: #3772FF;
       border-radius: 8px;
       text-transform: inherit;
       line-height: 44px;
@@ -67,8 +66,20 @@
         line-height: (20/14);
         font-family: $font-SVNGilroy-Bold;
       }
-      &--c1{
+      &--cool{
+        background: #3772FF;
+      }
+      &--biz{
         background: #ED6642;
+      }
+      &--pal{
+        background: #5BCCF9;
+      }
+      &--sang{
+        background: #FEC70B;
+      }
+      &--may{
+        background: #E8392A;
       }
     }
     &__item{

@@ -83,6 +83,21 @@
         </div>
     </div>
     <?php require "template-parts/layouts/search.php"; ?>
+    <div class="uk-hidden@m home__searchmb uk-margin-small-bottom" uk-sticky="offset: 60">
+        <div class="uk-container">
+            <div class="uk-flex-middle uk-grid-16" uk-grid>
+                <div class="uk-width-expand">
+                    <div class="uk-inline uk-width-1-1 home__search__mobile">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input class="uk-input" type="text" placeholder="Tìm tên, phong thuỷ,...">
+                    </div>
+                </div>
+                <div class="uk-width-auto uk-flex uk-flex-middle">
+                    <div class="boloc__btnFillter" uk-toggle="target: #offcanvas-fillter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="uk-container">
         <div class="home__content">
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
@@ -93,19 +108,6 @@
                 </div>
                 <div class="uk-width-expand">
                     <div class="uk-section-xsmall home__content__section">
-                        <div class="uk-hidden@m uk-margin-small-bottom" uk-sticky="offset: 70">
-                            <div class="uk-flex-middle uk-grid-16" uk-grid>
-                                <div class="uk-width-expand">
-                                    <div class="uk-inline uk-width-1-1 home__search__mobile">
-                                        <span class="uk-form-icon" uk-icon="icon: user"></span>
-                                        <input class="uk-input" type="text" placeholder="Tìm tên, phong thuỷ,...">
-                                    </div>
-                                </div>
-                                <div class="uk-width-auto uk-flex uk-flex-middle">
-                                    <div class="boloc__btnFillter" uk-toggle="target: #offcanvas-fillter"></div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="home__content__mb24">
                             <div class="uk-child-width-auto uk-flex-middle uk-grid-16-m" uk-grid>
                                 <div>

@@ -117,7 +117,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="" class="goicuoc__card__btn uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -146,7 +146,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="" class="goicuoc__card__btn uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -185,7 +185,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--c1 uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--biz uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +214,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--c1 uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                        <a href="" class="goicuoc__card__btn goicuoc__card__btn--biz uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                     </div>
                                 </div>
                             </div>
