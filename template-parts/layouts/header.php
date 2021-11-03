@@ -23,7 +23,7 @@
 
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
-<body class="">
+<body class="<?= ($isSticky)?'sticky':'' ?>">
 <?php
 $isLogin = rand(false,true);
 $isNotify = rand(false,true);
@@ -92,7 +92,7 @@ $isWishList = rand(false,true);
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#">Tìm Sim*</a></li>
+                            <li><a href="timsim.php">Tìm Sim*</a></li>
                             <li><a href="#">Gói cước</a></li>
                             <li><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>

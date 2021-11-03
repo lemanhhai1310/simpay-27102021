@@ -226,6 +226,9 @@
       .uk-sticky-fixed> &{
         display: none;
       }
+      .uk-sticky-fixed &{
+        display: none;
+      }
     }
     &__card{
       background-color: #fff;
@@ -236,6 +239,12 @@
       margin-bottom: 25px;
       @include media-breakpoint-up('m'){
         padding: 20px 32px;
+      }
+      .uk-sticky-fixed &{
+        box-shadow: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
       }
     }
     &__title{

@@ -1,4 +1,4 @@
-<?php $data["title"] = "Trang chủ"; ?>
+<?php $data["title"] = "Tìm sim"; ?>
 <?php $isHeader = true; ?>
 <?php $isFooter = true; ?>
 <?php $isSticky = true; ?>
@@ -8,8 +8,7 @@
 
     <ul class="uk-slideshow-items">
         <li>
-            <img class="uk-visible@m" src="images/banner1.png" alt="" uk-cover>
-            <img class="uk-hidden@m" src="images/Group4185.png" alt="" uk-cover>
+            <img src="images/Group3868.png" alt="" uk-cover>
         </li>
         <li>
             <img src="images/photo.jpg" alt="" uk-cover>
@@ -28,60 +27,7 @@
 </div>
 <!--/Slider-->
 
-<div class="uk-section-small home__section">
-    <div class="uk-container uk-padding-remove home__sanpham__margin">
-        <div class="home__sanpham__overFlow uk-child-width-1-5@m uk-grid-16 uk-grid-match uk-flex-nowrap" uk-toggle="cls: uk-overflow-auto; mode: media; media: (max-width: 959px)" uk-grid>
-            <?php
-            $data = array(
-                array(
-                    'txt' => 'cool',
-                    'desc' => 'Sim Đẹp - Giá rẻ - Data Khủng',
-                ),
-                array(
-                    'txt' => 'biz',
-                    'desc' => 'Bạn đồng hành của nhà kinh doanh',
-                ),
-                array(
-                    'txt' => 'sang',
-                    'desc' => 'Sim dành cho giới TINH HOA',
-                ),
-                array(
-                    'txt' => 'may',
-                    'desc' => 'Thay Sim Đổi Vận',
-                ),
-                array(
-                    'txt' => 'pal',
-                    'desc' => 'Yêu thương kết nối bằng Sim số',
-                ),
-            );
-            foreach ($data as $k=>$v): ?>
-            <div class="home__sanpham__column">
-                <div class="home__sanpham__card uk-card <?= $v['txt'] ?>">
-                    <div class="uk-card-body home__sanpham__body">
-                        <h3 class="uk-h3 home__sanpham__title">sim <span><?= $v['txt'] ?></span></h3>
-                        <p class="home__sanpham__desc"><?= $v['desc'] ?></p>
-                    </div>
-                    <div class="uk-card-footer home__sanpham__footer">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay:true;autoplay-interval:10000;">
-
-                            <ul class="uk-slider-items uk-child-width-1-1">
-                                <?php for ($i=0;$i<=2;$i++): ?>
-                                <li>
-                                    <div class="home__sanpham__number">0586.779.666</div>
-                                </li>
-                                <?php endfor; ?>
-                            </ul>
-
-                            <a class="uk-position-center-left uk-position-small home__sanpham__icon home__sanpham__icon--prev" href="#" uk-slider-item="previous"></a>
-                            <a class="uk-position-center-right uk-position-small home__sanpham__icon home__sanpham__icon--next" href="#" uk-slider-item="next"></a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
+<div class="uk-section-small timsim__section">
     <?php require "template-parts/layouts/search.php"; ?>
     <div class="uk-container">
         <div class="home__content">
@@ -197,58 +143,6 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="uk-section-small">
-            <h2 class="uk-h2 profile__content__title uk-text-center">Đơn hàng mới</h2>
-            <div class="uk-grid-small uk-child-width-1-3@m uk-grid-20-m" uk-grid>
-                <?php for ($i=1;$i<=6;$i++): ?>
-                    <div>
-                        <div class="uk-card home__donhang__card uk-card-default uk-card-body">
-                            <div class="home__donhang__item">
-                                <div>
-                                    <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
-                                        <div>
-                                            <div class="home__donhang__name">Trần M*** N***</div>
-                                        </div>
-                                        <div>
-                                            <div class="home__donhang__sim">SIM <span style="color: #3772FF">COOL</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
-                                        <div>
-                                            <div class="home__donhang__so">Sim số: <span>0586.779.666</span></div>
-                                        </div>
-                                        <div>
-                                            <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="home__donhang__item">
-                                <div class="uk-grid-0-s uk-grid-10 uk-grid-match" uk-grid>
-                                    <div class="uk-width-expand">
-                                        <div class="home__donhang__box uk-flex uk-flex-middle uk-width-1-1">
-                                            <div class="uk-grid-16 uk-child-width-1-2 uk-flex-center uk-flex-middle uk-width-1-1" uk-grid>
-                                                <div>
-                                                    <div class="home__donhang__txt home__donhang__txt--date line-clamp-1">06, June 2021</div>
-                                                </div>
-                                                <div>
-                                                    <div class="home__donhang__txt home__donhang__txt--money line-clamp-1">MDwjfkljklg9824</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="uk-width-auto@s">
-                                        <div class="uk-button uk-width-1-1 uk-button-primary home__donhang__price">1.800.000đ</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                <?php endfor; ?>
             </div>
         </div>
     </div>
