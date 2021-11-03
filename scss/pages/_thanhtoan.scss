@@ -199,4 +199,43 @@
       }
     }
   }
+  &__method{
+    &__input{
+      display: none;
+      &:checked ~ .thanhtoan__method__logo{
+        border: 2px solid #3772FF;
+      }
+    }
+    &__logo{
+      border: 2px solid transparent;
+      border-radius: 8px;
+      //background: #B1B5C3;
+      //mix-blend-mode: screen;
+    }
+    &__box{
+      border: 1px solid #E6E8EC;
+      box-sizing: border-box;
+      border-radius: 12px;
+    }
+    &__box1{
+      &__txt{
+        color: #141416;
+        line-height: (24/16);
+        @extend .fz-16;
+        font-family: $font-SVNGilroy-Medium;
+      }
+      &__link{
+        text-decoration-line: underline;
+        font-family: $font-SVNGilroy-Medium;
+        line-height: (24/16);
+        @extend .fz-16;
+        color: #3772FF;
+      }
+      >*{
+        &:nth-child(n+2){
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }

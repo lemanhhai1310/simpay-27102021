@@ -310,9 +310,47 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                 <div class="thanhtoan__left__item">
                     <h3 class="uk-h3 thanhtoan__left__title">Hình thức thanh toán</h3>
                     <div class="uk-margin uk-grid-10 uk-child-width-1-1 uk-grid uk-grid-stack" uk-grid="">
-                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio" checked=""> <span class="boloc__checkBox__txt">Thanh toán tiền mặt</span></label>
-                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trả góp</span></label>
-                        <label><input class="uk-checkbox boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trực tuyến</span></label>
+                        <label><input value="" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="radio" checked=""> <span class="boloc__checkBox__txt">Thanh toán tiền mặt</span></label>
+                        <label><input value="" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trả góp</span></label>
+                        <label><input value="payonline" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="radio"> <span class="boloc__checkBox__txt">Thanh toán trực tuyến</span></label>
+                    </div>
+                    <div class="Box" style="display: none">
+                        <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid uk-grid-12">
+                            <label>
+                                <input value="visa" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay" checked>
+                                <img class="thanhtoan__method__logo" src="images/visa.png" alt="">
+                            </label>
+                            <label>
+                                <input value="mastercard" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay">
+                                <img class="thanhtoan__method__logo" src="images/mastercard.png" alt="">
+                            </label>
+                            <label>
+                                <input value="the" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay">
+                                <img class="thanhtoan__method__logo" src="images/the.png" alt="">
+                            </label>
+                            <label>
+                                <input value="momo" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay">
+                                <img class="thanhtoan__method__logo" src="images/momo.png" alt="">
+                            </label>
+                            <label>
+                                <input value="payoo" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay">
+                                <img class="thanhtoan__method__logo" src="images/payoo.png" alt="">
+                            </label>
+                            <label>
+                                <input value="vnpay" class="uk-radio thanhtoan__method__input" type="radio" name="radio2pay">
+                                <img class="thanhtoan__method__logo" src="images/vnpay.png" alt="">
+                            </label>
+                        </div>
+                        <div class="thanhtoan__method__box uk-cover-container" style="display: none">
+                            <div class="uk-padding-small uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                <div class="uk-text-center thanhtoan__method__box1">
+                                    <div><img src="images/Group4148.png" alt=""></div>
+                                    <div class="thanhtoan__method__box1__txt">Sử dụng ứng dụng VNPAY <br> quét mã QR</div>
+                                    <div><a href="" class="thanhtoan__method__box1__link">Hướng dẫn thanh toán</a></div>
+                                </div>
+                            </div>
+                            <canvas width="573" height="432"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>

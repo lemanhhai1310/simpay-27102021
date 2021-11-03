@@ -117,6 +117,27 @@ window.addEventListener("load", ()=>{
     }
 });
 
+$(document).ready(function () {
+
+    $('.thanhtoanMethod').click(function () {
+        if ($(this).attr("value") == "payonline") {
+            $(".Box").show();
+        }else {
+            $(".Box").hide();
+        }
+    });
+
+    $('.thanhtoan__method__input').click(function () {
+        if ($(this).attr("value") == "vnpay") {
+            $(".thanhtoan__method__box").show();
+        }else {
+            $(".thanhtoan__method__box").hide();
+        }
+    });
+
+    // $('.thanhtoanMethod').trigger('click');  // trigger the event
+});
+
 jQuery(window).on("scroll",function(){
     if( jQuery('.back-to-top').length > 0 && jQuery(window).scrollTop() > 200 ){
         jQuery('.back-to-top').addClass('display');}
