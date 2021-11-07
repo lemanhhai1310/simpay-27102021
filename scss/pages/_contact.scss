@@ -33,14 +33,31 @@
       display: none;
     }
     &__li{
+      &:nth-child(n+2){
+        .phongthuysim__section &{
 
+          @include media-breakpoint-up('m'){
+            margin-top: 10px;
+          }
+        }
+      }
     }
     &__a{
+      .phongthuysim__section &{
+        color: #777E90;
+        @extend .fz-16;
+        @include media-breakpoint-up('m'){
+
+        }
+      }
       text-transform: inherit !important;
       color: #979797 !important;
       @extend .fz-14;
       font-family: $font-SVNGilroy-Medium;
       .uk-active> &{
+        .phongthuysim__section &{
+          @extend .fz-20;
+        }
         color: #3772FF !important;
         font-family: $font-SVNGilroy-Bold;
         @include media-breakpoint-up('m'){
