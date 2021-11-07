@@ -128,9 +128,11 @@
                                     <div><img src="images/visa.png" alt=""></div>
                                     <div><img src="images/mastercard.png" alt=""></div>
                                     <div><img src="images/the.png" alt=""></div>
-                                    <div><img src="images/tienmat.png" alt=""></div>
                                     <div><img src="images/tragop.png" alt=""></div>
+                                    <div><img src="images/tienmat.png" alt=""></div>
                                     <div><img src="images/momo.png" alt=""></div>
+                                    <div><img src="images/payoo.png" alt=""></div>
+                                    <div><img src="images/vnpay.png" alt=""></div>
                                 </div>
                             </div>
                             <div>

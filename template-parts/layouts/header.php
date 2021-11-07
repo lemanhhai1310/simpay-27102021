@@ -52,13 +52,13 @@ $isWishList = rand(false,true);
                     <!--uk-navbar-right-->
                     <div class="uk-navbar-right">
                         <div class="uk-navbar-item">
-                            <div class="header__top__txt">Chăm sóc khách hàng: <span>1900 4750</span></div>
+                            <div class="header__top__txt">Chăm sóc khách hàng: <a href="tel:19004750">1900 4750</a></div>
                         </div>
                         <div class="uk-navbar-item">
-                            <div class="header__top__txt">Hỗ trợ đại lý: <span>0988 855 155</span></div>
+                            <div class="header__top__txt">Hỗ trợ đại lý: <a href="tel:0988855155">0988 855 155</a></div>
                         </div>
                         <div class="uk-navbar-item">
-                            <div class="header__top__txt">Tuyển dụng: <span>0979 537 195</span></div>
+                            <div class="header__top__txt">Tuyển dụng: <a href="tel:0979537195">0979 537 195</a></div>
                         </div>
                     </div>
                     <!--/uk-navbar-right-->
@@ -84,7 +84,7 @@ $isWishList = rand(false,true);
                                 <a href="#">Sản phẩm</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
-                                        <li class="uk-active"><a href="#">SIM COOL</a></li>
+                                        <li><a href="simcool.php">SIM COOL</a></li>
                                         <li><a href="#">SIM BIZ</a></li>
                                         <li><a href="#">SIM SANG</a></li>
                                         <li><a href="#">SIM MAY</a></li>
