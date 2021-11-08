@@ -85,7 +85,7 @@
     &:nth-child(n+2){
       margin-top: 20px;
       @include media-breakpoint-up('m'){
-        margin-top: 50px;
+        margin-top: 48px;
       }
     }
   }

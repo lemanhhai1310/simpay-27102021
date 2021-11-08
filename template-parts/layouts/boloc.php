@@ -1,25 +1,9 @@
 <h3 class="uk-h3 boloc__title">Bộ lọc</h3>
 <div class="uk-grid-24 uk-grid uk-child-width-1-1 uk-form-stacked" uk-grid>
-    <div>
+    <div hidden>
         <div class="uk-margin uk-grid-10 uk-child-width-1-1 uk-grid" uk-grid>
             <label><input class="uk-checkbox boloc__checkBox__check" type="checkbox" checked> <span class="boloc__checkBox__txt">Trả trước</span></label>
             <label><input class="uk-checkbox boloc__checkBox__check" type="checkbox"> <span class="boloc__checkBox__txt">Trả sau</span></label>
-        </div>
-    </div>
-    <div>
-        <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Giá tiền</label>
-        <div class="uk-form-controls">
-            <div class="uk-grid-10 uk-flex-middle" uk-grid>
-                <div class="uk-width-expand">
-                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value="0">
-                </div>
-                <div class="uk-width-auto">
-                    <span>-</span>
-                </div>
-                <div class="uk-width-expand">
-                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value="125">
-                </div>
-            </div>
         </div>
     </div>
     <div>
@@ -40,6 +24,22 @@
         </div>
     </div>
     <div>
+        <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Giá tiền</label>
+        <div class="uk-form-controls">
+            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value="0">
+                </div>
+                <div class="uk-width-auto">
+                    <span>-</span>
+                </div>
+                <div class="uk-width-expand">
+                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value="125">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
         <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Không bao gồm</label>
         <div class="uk-form-controls">
             <div class="uk-grid-8 uk-child-width-auto uk-grid" uk-grid>
@@ -54,7 +54,7 @@
     </div>
 </div>
 <ul class="boloc__accordion" uk-accordion="multiple: true">
-    <li class="boloc__accordion__li uk-open">
+    <li class="boloc__accordion__li">
         <a class="uk-accordion-title boloc__accordion__title" href="#">THEO NHÀ MẠNG</a>
         <div class="uk-accordion-content boloc__accordion__content">
             <div class="uk-grid uk-grid-16 uk-form-stacked" uk-grid>
@@ -63,10 +63,14 @@
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
-                                <option value="">Viettel</option>
-                                <option value="1">Mobifone</option>
-                                <option value="2">Vinaphone</option>
-                                <option value="3">Vietnammobile</option>
+                                <option value="">Tất cả các nhà mạng</option>
+                                <option value="1">Viettel</option>
+                                <option value="2">Mobifone</option>
+                                <option value="3">Vinaphone</option>
+                                <option value="1">Vietnamobile</option>
+                                <option value="2">Gmobile</option>
+                                <option value="3">Itelecom</option>
+                                <option value="3">Reddi</option>
                             </select>
                             <button class="uk-button uk-button-default home__content__btnSort uk-width-1-1" type="button" tabindex="-1">
                                 <span></span>
@@ -75,15 +79,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-1">
                     <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Đầu số</label>
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
-                                <option value="">Tất cả</option>
-                                <option value="1">Mobifone</option>
-                                <option value="2">Vinaphone</option>
-                                <option value="3">Vietnammobile</option>
+                                <option value="">Tất cả các đầu số</option>
+                                <option value="09">Đầu số 09</option>
+                                <option value="08">Đầu số 08</option>
+                                <option value="07">Đầu số 07</option>
+                                <option value="05">Đầu số 05</option>
+                                <option value="03">Đầu số 03</option>
                             </select>
                             <button class="uk-button uk-button-default home__content__btnSort uk-width-1-1" type="button" tabindex="-1">
                                 <span></span>
@@ -92,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-2">
+                <div class="uk-width-1-1 uk-hidden">
                     <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Loại số</label>
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
@@ -109,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="uk-width-1-1">
+                <div class="uk-width-1-1 uk-hidden">
                     <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Tổng điểm</label>
                     <div class="uk-form-controls">
 
@@ -118,7 +124,7 @@
             </div>
         </div>
     </li>
-    <li class="boloc__accordion__li uk-open">
+    <li class="boloc__accordion__li">
         <a class="uk-accordion-title boloc__accordion__title" href="#">THEO NGÀY SINH</a>
         <div class="uk-accordion-content boloc__accordion__content">
             <div class="uk-grid uk-grid-16 uk-form-stacked" uk-grid>
@@ -134,7 +140,7 @@
             </div>
         </div>
     </li>
-    <li class="boloc__accordion__li uk-open">
+    <li class="boloc__accordion__li">
         <a class="uk-accordion-title boloc__accordion__title" href="#">THEO PHONG THUỶ</a>
         <div class="uk-accordion-content boloc__accordion__content">
             <div class="uk-grid uk-grid-16 uk-form-stacked" uk-grid>

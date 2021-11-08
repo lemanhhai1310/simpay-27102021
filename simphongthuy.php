@@ -63,24 +63,29 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                 <div class="uk-width-expand@m">
                     <ul id="component-tab-left" class="uk-switcher">
                         <li>
-                            <div class="phongthuysim__item1">
-                                <p class="phongthuysim__item1__desc"><span>Thân chủ:</span> Nam sinh vào ngày 6/6/1986</p>
-                                <p class="phongthuysim__item1__desc"><span>Âm lịch:</span> 29/4/1986</p>
-                                <p class="phongthuysim__item1__desc"><span>Theo Can chi:</span> Ngày Tân Tỵ tháng Quý Tỵ năm Bính Dần</p>
-                                <p class="phongthuysim__item1__desc"><span>Ngũ hành:</span> Lư trung hỏa, Mạng Lư Trung Hoả, xương con cọp, tướng tinh con chim trĩ, khắc Kiếm Phong Kim, con nhà Xích Ðế-cô bần</p>
-                                <p class="phongthuysim__item1__desc"><span>Số lượng chỉ:</span> 4 lượng 7 chỉ. Số này tính ra vượng về lúc tuổi già, vợ con phú quí, vì nguyên có cái phước sẵn như nước chảy lại.</p>
+                            <div class="phongthuysim__item">
+                                <div class="phongthuysim__item1">
+                                    <p class="phongthuysim__item1__desc"><span>Thân chủ:</span> Nam sinh vào ngày 6/6/1986</p>
+                                    <p class="phongthuysim__item1__desc"><span>Âm lịch:</span> 29/4/1986</p>
+                                    <p class="phongthuysim__item1__desc"><span>Theo Can chi:</span> Ngày Tân Tỵ tháng Quý Tỵ năm Bính Dần</p>
+                                    <p class="phongthuysim__item1__desc"><span>Ngũ hành:</span> Lư trung hỏa, Mạng Lư Trung Hoả, xương con cọp, tướng tinh con chim trĩ, khắc Kiếm Phong Kim, con nhà Xích Ðế-cô bần</p>
+                                    <p class="phongthuysim__item1__desc"><span>Số lượng chỉ:</span> 4 lượng 7 chỉ. Số này tính ra vượng về lúc tuổi già, vợ con phú quí, vì nguyên có cái phước sẵn như nước chảy lại.</p>
+                                </div>
+                                <div class="phongthuysim__item1">
+                                    <h5 class="uk-h5 phongthuysim__item1__title">1.1. Dãy số 1 điểm</h5>
+                                    <ul class="uk-list uk-list-circle phongthuysim__item1__list">
+                                        <li>Có 6 số mang vận âm, chiếm 60 %</li>
+                                        <li>Có 4 số mang vận dương, chiếm 40 %</li>
+                                        <li>Số lượng số mang vận âm và dương phù hợp tỉ lệ cân bằng, rất tốt.</li>
+                                    </ul>
+                                </div>
+                                <div class="phongthuysim__item1">
+                                    <h5 class="uk-h5 phongthuysim__item1__title">1.2. Vượng 1 điểm</h5>
+                                    <p class="phongthuysim__item1__desc">Thân chủ sinh năm Bính Dần, thuộc tuổi Dương Nam. Dãy số Vượng Âm nên rất tốt với tính Vượng Dương của bạn.</p>
+                                </div>
                             </div>
-                            <div class="phongthuysim__item1">
-                                <h5 class="uk-h5 phongthuysim__item1__title">1.1. Dãy số 1 điểm</h5>
-                                <ul class="uk-list uk-list-circle phongthuysim__item1__list">
-                                    <li>Có 6 số mang vận âm, chiếm 60 %</li>
-                                    <li>Có 4 số mang vận dương, chiếm 40 %</li>
-                                    <li>Số lượng số mang vận âm và dương phù hợp tỉ lệ cân bằng, rất tốt.</li>
-                                </ul>
-                            </div>
-                            <div class="phongthuysim__item1">
-                                <h5 class="uk-h5 phongthuysim__item1__title">1.2. Vượng 1 điểm</h5>
-                                <p class="phongthuysim__item1__desc">Thân chủ sinh năm Bính Dần, thuộc tuổi Dương Nam. Dãy số Vượng Âm nên rất tốt với tính Vượng Dương của bạn.</p>
+                            <div class="phongthuysim__item">
+                                <a href="thanhtoan.php" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login" aria-expanded="false">Đặt mua SIM</a>
                             </div>
                         </li>
                         <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>

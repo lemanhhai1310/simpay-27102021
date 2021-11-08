@@ -33,7 +33,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="home__search__form__option uk-position-bottom-right">Tìm kiếm nâng cao</a>
+                        <a href="timsim.php" class="home__search__form__option uk-position-bottom-right">Tìm kiếm nâng cao</a>
                     </div>
                 </div>
                 <div class="uk-width-auto uk-flex uk-flex-middle">

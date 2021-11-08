@@ -1,0 +1,49 @@
+.tooltip{
+  &__card{
+    background: #FFFFFF;
+    /* 1 */
+
+    box-shadow: 0px 4px 30px rgba(27, 25, 86, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 330px;
+  }
+  &__txt1{
+    color: #353945;
+    @extend .fz-14;
+    //line-height: 1;
+    font-family: $font-SVNGilroy-Medium;
+    span{
+      font-family: $font-SVNGilroy-XBold;
+    }
+  }
+  &__txt2{
+    @extend .fz-14;
+    //line-height: 1;
+    font-family: $font-SVNGilroy-Bold;
+    color: #000;
+    span{
+      color: #3772FF;
+    }
+  }
+  &__title{
+    color: #141416;
+    @extend .fz-12;
+    line-height: 1;
+    font-family: $font-SVNGilroy-XBold;
+  }
+  &__item{
+    $x:10px;
+    &:nth-child(n+2){
+      border-top: 1px solid #E6E8EC;
+      $x:10px;
+      margin-top: #{$x};
+      padding-top: #{$x};
+      @include media-breakpoint-up('m'){
+        $x:10px;
+        margin-top: #{$x};
+        padding-top: #{$x};
+      }
+    }
+  }
+}

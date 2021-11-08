@@ -36,7 +36,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                 <h5 class="uk-h5 thanhtoan__card__title">Tổng quan</h5>
                             </div>
                             <div>
-                                <a href="" class="thanhtoan__card__link1">Đổi SIM</a>
+                                <a href="cart.php" class="thanhtoan__card__link1">Đổi SIM</a>
                             </div>
                         </div>
                     </div>
@@ -288,7 +288,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                         </div>
                                     </div>
                                     <div>
-                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">Số điện thoại</label>
+                                        <label class="uk-form-label profile__form__label" for="form-stacked-text">SỐ ĐIỆN THOẠI LIÊN HỆ</label>
                                         <div class="uk-form-controls">
                                             <input class="uk-input profile__form__input" id="form-stacked-text" type="tel" placeholder="" value="0946787200">
                                         </div>
@@ -357,4 +357,5 @@ require "template-parts/layouts/breadcrumb.php"; ?>
         </div>
     </div>
 </div>
+
 <?php require "template-parts/layouts/footer.php"; ?>

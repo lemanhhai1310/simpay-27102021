@@ -111,7 +111,7 @@ $isWishList = rand(false,true);
                                     <div class="uk-inline">
                                         <div class="header__bottom__bell <?= ($isNotify)?'notify':'' ?>" data-count="1"></div>
                                         <?php if ($isNotify): ?>
-                                            <div class="" uk-dropdown="mode: click">
+                                            <div class="" uk-dropdown="mode: hover">
                                                 <ul class="header__listNotify uk-list uk-margin-remove">
                                                     <li class="header__listNotify__li">
                                                         <a href="" class="uk-link-toggle header__listNotify__link">
@@ -187,7 +187,7 @@ $isWishList = rand(false,true);
                                 <?php endif; ?>
                                 <div>
                                     <div class="uk-inline">
-                                        <a href="cart.php" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
+                                        <a href="<?= ($isCart)?'cart.php':'nocart.php' ?>" class="header__bottom__cart" <?= ($isCart)? 'data-count=2':'' ?> ></a>
                                         <div class="" uk-dropdown="mode: hover">
                                             <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
                                             <?php if ($isCart): ?>
@@ -196,7 +196,7 @@ $isWishList = rand(false,true);
                                                 <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
                                             <?php endif; ?>
                                             <div class="uk-text-center">
-                                                <a href="" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
+                                                <a href="<?= ($isCart)?'cart.php':'nocart.php' ?>" class="uk-button uk-button-secondary header__bottom__btn header__bottom__btn--login">Vào giỏ hàng</a>
                                             </div>
                                         </div>
                                     </div>

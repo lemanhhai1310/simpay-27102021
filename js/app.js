@@ -4,6 +4,7 @@ console.log(
 );
 
 var placeholderText = [
+    "Tìm số theo cú pháp *xxxx tên, phong thuỷ, số điện thoại,...",
     "Tìm tên",
     "Phong thuỷ",
     "Số điện thoại,...",
@@ -43,8 +44,41 @@ window.addEventListener("load", ()=>{
         '                            </div>\n' +
         '                        </div>';
 
+    const content = '<div class="uk-card tooltip__card uk-card-body uk-card-default">\n' +
+        '    <div class="tooltip__item">\n' +
+        '        <span class="tooltip__title">Thông tin Sim</span>\n' +
+        '    </div>\n' +
+        '    <div class="tooltip__item">\n' +
+        '        <div class="uk-grid-10 uk-child-width-1-1" uk-grid>\n' +
+        '            <div>\n' +
+        '                <div uk-grid>\n' +
+        '                    <div class="uk-width-expand">\n' +
+        '                        <div class="tooltip__txt1"><span>Sim số:</span> 0586.779.666</div>\n' +
+        '                    </div>\n' +
+        '                    <div class="uk-width-auto">\n' +
+        '                        <div class="tooltip__txt2">SIM <span>COOL</span></div>\n' +
+        '                    </div>\n' +
+        '                </div>\n' +
+        '            </div>\n' +
+        '            <div>\n' +
+        '                <div class="tooltip__txt1"><span>Loại sim:</span> Sim Tam hoa</div>\n' +
+        '            </div>\n' +
+        '            <div>\n' +
+        '                <div class="tooltip__txt1"><span>Đại cát:</span> Thành tựu to lớn, tên tuổi lừng danh</div>\n' +
+        '            </div>\n' +
+        '        </div>\n' +
+        '    </div>\n' +
+        '</div>'
+
     tippy('.home__content__sanpham__info', {
         content: contentHtml,
+        allowHTML: true,
+        followCursor: true,
+        placement: 'right-start',
+    });
+
+    tippy('.home__content__sanpham__link--info', {
+        content: content,
         allowHTML: true,
         followCursor: true,
         placement: 'right-start',

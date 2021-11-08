@@ -102,7 +102,7 @@
         <div class="home__content">
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
-                    <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 230; bottom: true;">
+                    <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 170; bottom: true;">
                         <?php require "template-parts/layouts/boloc.php"; ?>
                     </div>
                 </div>
@@ -151,40 +151,7 @@
                             </div>
                         </div>
                         <div class="home__content__mb77">
-                            <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-32-m home__content__sanpham__grid" uk-grid>
-                                <?php for ($i=1;$i<=45;$i++): ?>
-                                    <div>
-                                        <div class="uk-card uk-card-default uk-card-body home__content__sanpham__card">
-                                            <?php if ($i<=6): ?>
-                                                <?php
-                                                $items = Array(
-                                                    'images/_Thẻ/Tag1.png',
-                                                    'images/_Thẻ/Tag2.png',
-                                                    'images/_Thẻ/Tag3.png',
-                                                );
-                                                ?>
-                                                <img class="uk-position-top-left home__content__sanpham__imgTag" src="<?= $items[array_rand($items)] ?>" alt="">
-                                            <?php endif; ?>
-                                            <div class="uk-position-top-right home__content__sanpham__link--position">
-                                                <a href="" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
-                                                <a href="" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
-                                            </div>
-                                            <div class="home__content__sanpham__mb">
-                                                <div class="home__content__sanpham__phoneNumber">056.780.<span>6666</span></div>
-                                                <span class="home__content__sanpham__info"></span>
-                                            </div>
-                                            <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
-                                                <div>
-                                                    <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
-                                                </div>
-                                                <div>
-                                                    <span class="home__content__sanpham__priceTxt">1.800.000đ</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endfor; ?>
-                            </div>
+                            <?php require "template-parts/layouts/products.php"; ?>
                         </div>
 
                         <ul class="uk-pagination uk-flex-center pagination uk-grid-4" uk-margin>
@@ -204,14 +171,23 @@
         <div class="uk-section-small">
             <h2 class="uk-h2 profile__content__title uk-text-center">Đơn hàng mới</h2>
             <div class="uk-grid-small uk-child-width-1-3@m uk-grid-20-m" uk-grid>
-                <?php for ($i=1;$i<=6;$i++): ?>
+                <?php
+                $name = array(
+                    'Trần Minh Ngọc',
+                    'Cao Trung Hiếu',
+                    'Lê Nhung',
+                    'Lê Mạnh Hải',
+                    'Huy Bùi',
+                    'Trần Huyền',
+                );
+                for ($i=1;$i<=6;$i++): ?>
                     <div>
                         <div class="uk-card home__donhang__card uk-card-default uk-card-body">
                             <div class="home__donhang__item">
                                 <div>
                                     <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
                                         <div>
-                                            <div class="home__donhang__name">Trần M*** N***</div>
+                                            <div class="home__donhang__name"><?= $name[array_rand($name)] ?></div>
                                         </div>
                                         <div>
                                             <div class="home__donhang__sim">SIM <span style="color: #3772FF">COOL</span></div>
@@ -221,7 +197,7 @@
                                 <div>
                                     <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle uk-grid" uk-grid="">
                                         <div>
-                                            <div class="home__donhang__so">Sim số: <span>0586.779.666</span></div>
+                                            <div class="home__donhang__so">Sim số: <span>0586.77****</span></div>
                                         </div>
                                         <div>
                                             <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
