@@ -11,10 +11,43 @@
         <div class="uk-form-controls">
             <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                 <select>
-                    <option value="">Sim Tứ quý</option>
-                    <option value="1">Mobifone</option>
-                    <option value="2">Vinaphone</option>
-                    <option value="3">Vietnammobile</option>
+                    <option value="">Tất cả các loại sim</option>
+                    <option value="1">Sim VIP</option>
+                    <option value="2">Sim Lục quý</option>
+                    <option value="3">Sim Lục quý giữa</option>
+
+                    <option value="1">Sim Ngũ quý</option>
+                    <option value="2">Sim Ngũ quý giữa</option>
+                    <option value="3">Sim Tứ quý</option>
+
+                    <option value="1">Sim Tứ quý giữa</option>
+                    <option value="2">Sim Tam hoa</option>
+                    <option value="3">Sim Tam hoa giữa</option>
+
+                    <option value="1">Sim Tam hoa kép</option>
+                    <option value="2">Sim Taxi</option>
+                    <option value="3">Sim Lộc phát</option>
+
+                    <option value="1">Sim Thần Tài</option>
+                    <option value="2">Sim Ông Địa</option>
+                    <option value="3">Sim Lặp kép</option>
+
+                    <option value="1">Sim Gánh đảo</option>
+                    <option value="2">Sim Tiến lên</option>
+                    <option value="3">Sim Lặp</option>
+
+                    <option value="1">Sim Kép 2</option>
+                    <option value="2">Sim Kép 3</option>
+                    <option value="3">Sim Số đảo 2</option>
+
+                    <option value="1">Sim Số đảo 3 - Soi gương</option>
+                    <option value="2">Sim Số độc</option>
+                    <option value="3">Sim Đôi</option>
+
+                    <option value="1">Sim Dễ nhớ</option>
+                    <option value="2">Sim Đầu số cổ</option>
+                    <option value="3">Sim Đại Cát</option>
+                    <option value="3">Sim Khuyến mãi</option>
                 </select>
                 <button class="uk-button uk-button-default home__content__btnSort uk-width-1-1" type="button" tabindex="-1">
                     <span></span>
@@ -45,7 +78,7 @@
             <div class="uk-grid-8 uk-child-width-auto uk-grid" uk-grid>
                 <?php for ($i=1;$i<=9;$i++): ?>
                 <label class="boloc__notNumber">
-                    <input class="uk-checkbox boloc__notNumber__check" type="checkbox" <?= ($i==1)?'checked':'' ?>>
+                    <input class="uk-checkbox boloc__notNumber__check" type="checkbox" <?= ($i==0)?'checked':'' ?>>
                     <span class="boloc__notNumber__txt"><?= $i ?></span>
                 </label>
                 <?php endfor; ?>

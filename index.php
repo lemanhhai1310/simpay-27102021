@@ -134,11 +134,11 @@
                                         <div>
                                             <div uk-form-custom="target: > * > span:first-child">
                                                 <select>
-                                                    <option value="">Giá thấp đến cao</option>
-                                                    <option value="1">Option 01</option>
-                                                    <option value="2">Option 02</option>
-                                                    <option value="3">Option 03</option>
-                                                    <option value="4">Option 04</option>
+                                                    <option value="">Tất cả</option>
+                                                    <option value="1">Giá thấp đến cao</option>
+                                                    <option value="2">Giá cao đến thấp</option>
+                                                    <option value="3">Theo bộ lọc đã chọn</option>
+                                                    <option value="4">Ưu đãi</option>
                                                 </select>
                                                 <button class="uk-button uk-button-default home__content__btnSort" type="button" tabindex="-1">
                                                     <span></span>
@@ -170,7 +170,10 @@
         </div>
         <div class="uk-section-small">
             <h2 class="uk-h2 profile__content__title uk-text-center">Đơn hàng mới</h2>
-            <div class="uk-grid-small uk-child-width-1-3@m uk-grid-20-m" uk-grid>
+            <div class="uk-text-right home__donhang__box1">
+                <div class="home__donhang__box1__txt">Đã có <span>1234</span> đơn đặt hàng</div>
+            </div>
+            <div class="uk-grid-small uk-child-width-1-3@m uk-grid-20-m" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .home__donhang__card; delay: 300; repeat: false">
                 <?php
                 $name = array(
                     'Trần Minh Ngọc',
@@ -209,17 +212,20 @@
                                 <div class="uk-grid-0-s uk-grid-10 uk-grid-match" uk-grid>
                                     <div class="uk-width-expand">
                                         <div class="home__donhang__box uk-flex uk-flex-middle uk-width-1-1">
-                                            <div class="uk-grid-16 uk-child-width-1-2 uk-flex-center uk-flex-middle uk-width-1-1" uk-grid>
+                                            <div class="uk-grid-16 uk-child-width-auto uk-flex-center uk-flex-middle uk-flex-between uk-width-1-1" uk-grid>
                                                 <div>
                                                     <div class="home__donhang__txt home__donhang__txt--date line-clamp-1">06, June 2021</div>
                                                 </div>
                                                 <div>
                                                     <div class="home__donhang__txt home__donhang__txt--money line-clamp-1">MDwjfkljklg9824</div>
                                                 </div>
+                                                <div>
+                                                    <span class="home__donhang__price1">1.800.000đ</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="uk-width-auto@s">
+                                    <div class="uk-width-auto@s uk-hidden">
                                         <div class="uk-button uk-width-1-1 uk-button-primary home__donhang__price">1.800.000đ</div>
                                     </div>
                                 </div>

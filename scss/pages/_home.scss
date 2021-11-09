@@ -545,6 +545,21 @@
     }
   }
   &__donhang{
+    &__box1{
+      margin-bottom: 10px;
+      &__txt{
+        color: #828FA2;
+        @extend .fz-16;
+        line-height: (24/16);
+        font-family: $font-SVNGilroy-Medium;
+        span{
+          @extend .fz-18;
+          line-height: (24/18);
+          font-family: $font-SVNGilroy-Bold;
+          color: #3772FF;
+        }
+      }
+    }
     &__card{
       background: #FFFFFF;
       $x:15px;
@@ -597,6 +612,12 @@
       border-radius: 1px;
       padding: 7px;
       width: 100%;
+    }
+    &__price1{
+      color: #3772FF;
+      line-height: (20/14);
+      @extend .fz-14;
+      font-family: $font-SVNGilroy-Bold;
     }
     &__price{
       @extend .fz-14;

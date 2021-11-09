@@ -36,7 +36,10 @@ require "template-parts/layouts/breadcrumb.php"; ?>
             <?php for ($i=0;$i<=1;$i++): ?>
             <div>
                 <div class="uk-card cart__card uk-card-default uk-card-body">
-                    <a href="#modal-trash" class="cart__card__trash" uk-toggle></a>
+                    <div class="uk-position-top-right cart__card__position">
+                        <a href="#" class="cart__card__icon cart__card__icon--wishList"></a>
+                        <a href="#modal-trash" class="cart__card__icon cart__card__icon--trash" uk-toggle></a>
+                    </div>
                     <div class="home__content__sanpham__mb">
                         <div class="home__content__sanpham__phoneNumber">056.780.<span>6666</span></div>
                         <span class="home__content__sanpham__info"></span>

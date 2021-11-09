@@ -1,4 +1,4 @@
-<div class="search__section" uk-sticky="offset: 76">
+<div id="my-search" class="search__section" uk-sticky="offset: 76">
     <div class="uk-container">
         <div class="uk-card uk-card-default uk-card-body home__search__card uk-visible@m">
             <div class="uk-text-center uk-margin-bottom home__search__box">

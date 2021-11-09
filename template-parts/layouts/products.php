@@ -35,7 +35,7 @@
                         'images/_Thẻ/Tag3.png',
                     );
                     ?>
-                    <img class="uk-position-top-left home__content__sanpham__imgTag" src="<?= $items[array_rand($items)] ?>" alt="">
+                    <img hidden class="uk-position-top-left home__content__sanpham__imgTag" src="<?= $items[array_rand($items)] ?>" alt="">
                 <?php endif; ?>
                 <div class="uk-position-top-right home__content__sanpham__link--position">
                     <a href="simphongthuy.php" class="home__content__sanpham__link home__content__sanpham__link--info"></a>

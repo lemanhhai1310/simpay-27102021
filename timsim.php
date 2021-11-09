@@ -78,11 +78,11 @@
                                         <div>
                                             <div uk-form-custom="target: > * > span:first-child">
                                                 <select>
-                                                    <option value="">Giá thấp đến cao</option>
-                                                    <option value="1">Option 01</option>
-                                                    <option value="2">Option 02</option>
-                                                    <option value="3">Option 03</option>
-                                                    <option value="4">Option 04</option>
+                                                    <option value="">Tất cả</option>
+                                                    <option value="1">Giá thấp đến cao</option>
+                                                    <option value="2">Giá cao đến thấp</option>
+                                                    <option value="3">Theo bộ lọc đã chọn</option>
+                                                    <option value="4">Ưu đãi</option>
                                                 </select>
                                                 <button class="uk-button uk-button-default home__content__btnSort" type="button" tabindex="-1">
                                                     <span></span>
