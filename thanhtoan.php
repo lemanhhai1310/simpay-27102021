@@ -119,7 +119,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                     <div class="thanhtoan__card__item1__txt">Gói cước</div>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <div class="thanhtoan__card__item1__txt">B100N <a href="">Xem chi tiết</a></div>
+                                    <div class="thanhtoan__card__item1__txt">B100N <a href="#modal-paydetail" uk-toggle="">Xem chi tiết</a></div>
                                 </div>
                             </div>
                         </div>
@@ -357,5 +357,48 @@ require "template-parts/layouts/breadcrumb.php"; ?>
         </div>
     </div>
 </div>
-
+<!--Xem chi tiết-->
+<div id="modal-paydetail" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog login__modal__dialog login__modal__dialog--m2 uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default login__modal__close" type="button" uk-close></button>
+        <div class="thanhtoan__modal__item1">
+            <h2 class="uk-modal-title uk-text-center login__modal__title">Gói SIMPAY 6 MNP</h2>
+            <p class="login__modal__desc uk-text-center">Gói cước mới nhất với những ưu đãi hấp dẫn từ SIMPAY</p>
+            <div class="uk-card thanhtoan__modal__card uk-card-body uk-card-default">
+                <div class="uk-grid-small uk-grid-32-m" uk-grid>
+                    <div class="uk-width-2-5@m">
+                        <div class="thanhtoan__modal__item">
+                            <div class="thanhtoan__modal__txt1">Giá cước</div>
+                            <div class="thanhtoan__modal__txt2">500.000 đ/tháng</div>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand">
+                        <div class="thanhtoan__modal__item">
+                            <div class="thanhtoan__modal__txt1">Dịch vụ</div>
+                            <div class="thanhtoan__modal__txt2">Miễn phí 60 phút đầu/ gọi nội mạng</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-text-center thanhtoan__modal__box">
+                <div>Chia sẻ ngay với bạn bè</div>
+                <div class="uk-child-width-auto uk-flex-middle uk-flex-center uk-grid-16" uk-grid>
+                    <div>
+                        <a href="" class="thanhtoan__modal__icon thanhtoan__modal__icon--fb"></a>
+                    </div>
+                    <div>
+                        <a href="" class="thanhtoan__modal__icon thanhtoan__modal__icon--tw"></a>
+                    </div>
+                    <div>
+                        <a href="" class="thanhtoan__modal__icon thanhtoan__modal__icon--ins"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Xem chi tiết-->
+<script>
+    UIkit.modal('#modal-paydetail').show();
+</script>
 <?php require "template-parts/layouts/footer.php"; ?>
