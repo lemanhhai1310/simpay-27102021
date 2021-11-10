@@ -119,6 +119,9 @@
       .cart__section &{
         margin-bottom: 16px !important;
       }
+      .wishlist__section &{
+        margin-bottom: 0 !important;
+      }
       .home__section &{
         @include media-breakpoint-up('m'){
           margin-bottom: 31px !important;

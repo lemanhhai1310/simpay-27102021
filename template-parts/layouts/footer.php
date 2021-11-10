@@ -74,7 +74,7 @@
                                 <a class="uk-accordion-title" href="#">HỖ TRỢ KHÁCH HÀNG</a>
                                 <div class="uk-accordion-content">
                                     <ul class="uk-list footer__bottom__menuList">
-                                        <li><a href="">Hottline chăm sóc khách hàng: 1900 4750</a></li>
+                                        <li><a href="">1900 4750: Hottline CSKH</a></li>
                                         <li><a href="">Mail hỗ trợ: cskh@simpay.vn</a></li>
                                         <li><a href="">Câu hỏi thường gặp</a></li>
                                         <li><a href="">Hướng dẫn trả góp</a></li>
@@ -116,7 +116,7 @@
                             <div class="uk-width-1-3@m">
                                 <h4 class="uk-h4 footer__bottom__title">HỖ TRỢ KHÁCH HÀNG</h4>
                                 <ul class="uk-list footer__bottom__menuList">
-                                    <li><a href="">Hottline chăm sóc khách hàng: 1900 4750</a></li>
+                                    <li><a href="">1900 4750: Hottline CSKH</a></li>
                                     <li><a href="">Mail hỗ trợ: cskh@simpay.vn</a></li>
                                     <li><a href="">Câu hỏi thường gặp</a></li>
                                     <li><a href="">Hướng dẫn trả góp</a></li>

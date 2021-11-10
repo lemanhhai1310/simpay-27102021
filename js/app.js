@@ -158,25 +158,25 @@ window.addEventListener("load", ()=>{
         '<div class="uk-notification__text">Nhập sai quá <span>05</span> lần sẽ bị khoá tài khoản.</div>' +
         '</div>';
 
-    UIkit.notification({
-        message: wishList,
-        status: 'success',
-        pos: 'top-right',
-        timeout: 5000
-    });
-
-    UIkit.notification({
-        message: acc,
-        status: 'success',
-        pos: 'top-right',
-        timeout: 5000
-    });
-    UIkit.notification({
-        message: error,
-        status: 'danger',
-        pos: 'top-right',
-        timeout: 5000
-    });
+    // UIkit.notification({
+    //     message: wishList,
+    //     status: 'success',
+    //     pos: 'top-right',
+    //     timeout: 5000
+    // });
+    //
+    // UIkit.notification({
+    //     message: acc,
+    //     status: 'success',
+    //     pos: 'top-right',
+    //     timeout: 5000
+    // });
+    // UIkit.notification({
+    //     message: error,
+    //     status: 'danger',
+    //     pos: 'top-right',
+    //     timeout: 5000
+    // });
 
 });
 

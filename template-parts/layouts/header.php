@@ -177,7 +177,7 @@ $isWishList = rand(false,true);
                                 </div>
                                 <!--wishlist-->
                                 <div>
-                                    <a href="" class="header__bottom__wishList__icon <?= ($isWishList)?'uk-active':'' ?>"></a>
+                                    <a href="wishlist.php" class="header__bottom__wishList__icon <?= ($isWishList)?'uk-active':'' ?>"></a>
                                 </div>
                                 <!--/wishlist-->
                                 <?php else: ?>
