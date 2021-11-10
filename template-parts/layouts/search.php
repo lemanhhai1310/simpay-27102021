@@ -39,7 +39,7 @@
                                                 foreach ($data as $k=>$v): ?>
                                                 <li>
                                                     <label>
-                                                        <input class="home__search__form__list__checkbox uk-checkbox uk-hidden" type="checkbox">
+                                                        <input <?= ($k==0)?checked:'' ?> class="home__search__form__list__checkbox uk-checkbox uk-hidden" type="checkbox">
                                                         <div class="home__search__form__list__label"><?= $v ?></div>
                                                     </label>
                                                 </li>
