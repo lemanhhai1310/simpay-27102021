@@ -399,6 +399,6 @@ require "template-parts/layouts/breadcrumb.php"; ?>
 </div>
 <!--/Xem chi tiết-->
 <script>
-    UIkit.modal('#modal-paydetail').show();
+    // UIkit.modal('#modal-paydetail').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>
