@@ -73,6 +73,13 @@
     .uk-navbar-nav{
       >li{
         >a{
+          padding: 0 20px;
+          sup{
+            color: #E73C3D;
+            position: relative;
+            top: -3px;
+            left: -2px;
+          }
           @extend .header__bottom__navbarItem;
           color: #1D1E41;
           @extend .fz-16;
@@ -97,6 +104,8 @@
       }
     }
     &__iconHome{
+      position: relative;
+      top: -3px;
       display: inline-block;
       width: 24px;
       height: 24px;
@@ -116,7 +125,7 @@
     &__divider{
       position: relative;
       @include media-breakpoint-up('m'){
-        margin-left: 100px;
+        margin-left: 70px;
       }
       &:after{
         content: "";

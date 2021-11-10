@@ -93,7 +93,7 @@ $isWishList = rand(false,true);
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="timsim.php">Tìm Sim*</a></li>
+                            <li><a href="timsim.php">Tìm Sim<sup>*</sup></a></li>
                             <li><a href="goicuoc.php">Gói cước</a></li>
                             <li><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
@@ -255,7 +255,7 @@ $isWishList = rand(false,true);
                                     <li><a href="#">SIM PAL</a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Tìm Sim*</a></li>
+                            <li><a href="">Tìm Sim<sup>*</sup></a></li>
                             <li><a href="">Gói cước</a></li>
                             <li><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
