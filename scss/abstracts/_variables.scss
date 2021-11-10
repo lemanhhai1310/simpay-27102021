@@ -32,6 +32,7 @@ $container: 1264px;
 // Define the minimum dimensions at which your layout will change,
 // adapting to different screen sizes, for use in media queries.
 $grid-breakpoints: (
+  x: 320px,
   xs: 375px,
   s: 640px,
   m: 960px,

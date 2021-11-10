@@ -73,7 +73,12 @@ $isWishList = rand(false,true);
                 <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
                     <!--uk-navbar-left-->
                     <div class="uk-navbar-left">
-                        <a href="." class="uk-navbar-item uk-logo"><img src="images/logo1.png" alt=""></a>
+                        <a href="." class="uk-navbar-item uk-logo">
+                            <img hidden src="images/logo1.png" alt="">
+                            <div class="uk-cover-container header__bottom__logo">
+                                <canvas width="310" height="69"></canvas>
+                            </div>
+                        </a>
                     </div>
                     <!--/uk-navbar-left-->
 

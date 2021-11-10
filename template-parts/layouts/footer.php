@@ -2,7 +2,7 @@
     <!--footer-->
     <div class="footer">
         <!--footer__top-->
-        <div class="footer__top uk-overflow-hidden" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .footer__top__img; delay: 300; repeat: true">
+        <div class="footer__top uk-overflow-hidden" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .footer__top__img; delay: 300; repeat: false">
             <div class="uk-container">
                 <div class="uk-grid-small uk-grid-33-m uk-flex-bottom" uk-grid>
                     <div class="uk-width-auto@m uk-visible@m">

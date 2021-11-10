@@ -9,9 +9,9 @@
                 <div class="uk-width-expand">
                     <div class="uk-position-relative home__search__margin25">
                         <div class="home__search__form">
-                            <div class="uk-grid-divider uk-grid-small" uk-grid>
+                            <div class="uk-grid-divider uk-grid-small uk-grid-match" uk-grid>
                                 <div class="uk-width-auto">
-                                    <div uk-form-custom="target: > * > span:first-child">
+                                    <div hidden uk-form-custom="target: > * > span:first-child">
                                         <select>
                                             <option value="">Tất cả</option>
                                             <option value="1">Option 01</option>
@@ -23,6 +23,29 @@
                                             <span></span>
                                             <span uk-icon="icon: chevron-down"></span>
                                         </button>
+                                    </div>
+                                    <div class="uk-inline uk-flex uk-flex-middle">
+                                        <button class="uk-button home__search__form__btn1 uk-button-default" type="button"><span>Tất cả</span></button>
+                                        <div class="home__search__form__drop" uk-dropdown="mode: click">
+                                            <ul class="uk-list home__search__form__list">
+                                                <?php
+                                                $data = array(
+                                                    'TẤT CẢ',
+                                                    'SIM SỐ ĐẸP',
+                                                    'SIM PHONG THUỶ',
+                                                    'SIM NĂM SINH',
+                                                    'SIM THEO GIÁ TIỀN',
+                                                );
+                                                foreach ($data as $k=>$v): ?>
+                                                <li>
+                                                    <label>
+                                                        <input class="home__search__form__list__checkbox uk-checkbox uk-hidden" type="checkbox">
+                                                        <div class="home__search__form__list__label"><?= $v ?></div>
+                                                    </label>
+                                                </li>
+                                                <?php endforeach; ?>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">
@@ -46,7 +69,6 @@
                     $data = array(
                         'Sản phẩm của SIMPAY',
                         'Gói cước Combo',
-                        'Tìm Sim*',
                         'Sim Phong thuỷ',
                         'Sim năm sinh',
                         'Sim số đẹp',
