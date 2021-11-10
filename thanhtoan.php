@@ -151,7 +151,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                     <div class="thanhtoan__card__item1__txt">Phí vận chuyển</div>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <div class="thanhtoan__card__item1__txt">50.000đ</div>
+                                    <div class="thanhtoan__card__item1__txt uk-flex uk-flex-middle">50.000đ <a href="" class="thanhtoan__icon"></a></div>
                                 </div>
                             </div>
                         </div>
@@ -170,7 +170,15 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                     </div>
                     <div class="uk-margin">
                         <a href="thongtindonhang.php" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đặt mua sim</span></a>
-                        <div class="uk-text-center login__box__txt1">Với việc ấn vào nút “Đặt mua", Tôi đồng ý với <a href="">Điều khoản mua hàng</a> của SIMPAY</div>
+                        <div class="uk-margin uk-grid-small" uk-grid>
+                            <div class="uk-width-auto">
+                                <input value="" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="checkbox" checked="">
+                            </div>
+                            <div class="uk-width-expand">
+                                <div class="login__box__txt1 uk-margin-remove">Với việc ấn vào nút “Đặt mua", Tôi đồng ý với <a href="">Điều khoản mua hàng</a> và
+                                    <a href="">Chính sách</a> của SIMPAY</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

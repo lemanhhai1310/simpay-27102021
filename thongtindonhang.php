@@ -113,7 +113,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                     <div class="thanhtoan__card__item1__txt">Phí vận chuyển</div>
                                 </div>
                                 <div class="uk-width-auto">
-                                    <div class="thanhtoan__card__item1__txt">50.000đ</div>
+                                    <div class="thanhtoan__card__item1__txt uk-flex uk-flex-middle">50.000đ <a href="" class="thanhtoan__icon"></a></div>
                                 </div>
                             </div>
                         </div>
