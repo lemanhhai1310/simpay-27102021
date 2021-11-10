@@ -125,7 +125,7 @@
     &__divider{
       position: relative;
       @include media-breakpoint-up('m'){
-        margin-left: 70px;
+        margin-left: 50px;
       }
       &:after{
         content: "";
