@@ -79,16 +79,19 @@
           font-family: $font-SVNGilroy-SemiBold;
           text-transform: inherit;
           background-repeat: no-repeat;
-          background-position: center right -4px;
+          background-position: center right 3px;
           &:hover{
             color: #3772FF;
           }
+          &[aria-expanded]{
+            padding-right: 25px;
+          }
           &[aria-expanded="false"]{
-            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%231D1E41' stroke-width='1.03' points='16 7 10 13 4 7'%3E%3C/polyline%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z' fill='%231D1E41'/%3E%3C/svg%3E%0A");
           }
           &[aria-expanded="true"]{
             color: #3772FF;
-            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline fill='none' stroke='%233772FF' stroke-width='1.03' points='4 13 10 7 16 13'%3E%3C/polyline%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.79289 14.2071C8.18342 14.5976 8.81658 14.5976 9.20711 14.2071L12 11.4142L14.7929 14.2071C15.1834 14.5976 15.8166 14.5976 16.2071 14.2071C16.5976 13.8166 16.5976 13.1834 16.2071 12.7929L12.7071 9.29289C12.3166 8.90237 11.6834 8.90237 11.2929 9.29289L7.79289 12.7929C7.40237 13.1834 7.40237 13.8166 7.79289 14.2071Z' fill='%231D1E41'/%3E%3C/svg%3E%0A");
           }
         }
       }

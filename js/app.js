@@ -149,6 +149,35 @@ window.addEventListener("load", ()=>{
             }
         });
     }
+
+    const wishList = '<div class="uk-notification__content uk-notification__content--wishList"><div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục <span>Danh sách yêu thích</span> của bạn.</div></div>';
+    const acc = '<div class="uk-notification__content uk-notification__content--acc"><div class="uk-notification__text">Hãy <span>Đăng ký/Đăng nhập</span> để cải thiện trải nghiệm Cá nhân hoá\n' +
+        'khi truy cập và sử dụng <span>Danh sách yêu thích</span> của bạn.</div></div>';
+    const error = '<div class="uk-notification__content uk-notification__content--error">' +
+        '<div class="uk-notification__text">Bạn đã điền sai Mật khẩu đăng nhập <span>02</span> lần.</div>' +
+        '<div class="uk-notification__text">Nhập sai quá <span>05</span> lần sẽ bị khoá tài khoản.</div>' +
+        '</div>';
+
+    UIkit.notification({
+        message: wishList,
+        status: 'success',
+        pos: 'top-right',
+        timeout: 5000
+    });
+
+    UIkit.notification({
+        message: acc,
+        status: 'success',
+        pos: 'top-right',
+        timeout: 5000
+    });
+    UIkit.notification({
+        message: error,
+        status: 'danger',
+        pos: 'top-right',
+        timeout: 5000
+    });
+
 });
 
 $(document).ready(function () {

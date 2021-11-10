@@ -39,7 +39,7 @@
                 <?php endif; ?>
                 <div class="uk-position-top-right home__content__sanpham__link--position">
                     <a href="simphongthuy.php" class="home__content__sanpham__link home__content__sanpham__link--info"></a>
-                    <a href="" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
+                    <a href="javascript:void(0)" onclick="addWishList()" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
                     <a href="cart.php" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
                 </div>
                 <div class="home__content__sanpham__mb">
@@ -58,3 +58,15 @@
         </div>
     <?php endfor; ?>
 </div>
+
+<script>
+    const wishList = '<div class="uk-notification__content uk-notification__content--wishList"><div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục <span>Danh sách yêu thích</span> của bạn.</div></div>';
+    const addWishList = () => {
+        UIkit.notification({
+            message: wishList,
+            status: 'success',
+            pos: 'top-right',
+            timeout: 5000
+        });
+    }
+</script>
