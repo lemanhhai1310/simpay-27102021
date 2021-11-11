@@ -5,9 +5,10 @@ console.log(
 
 var placeholderText = [
     "Tìm số theo cú pháp *xxxx tên, phong thuỷ, số điện thoại,...",
-    "Tìm tên",
-    "Phong thuỷ",
-    "Số điện thoại,...",
+    "Tìm số theo cú pháp *xxxx tên, phong thuỷ, số điện thoại,...",
+    // "Tìm tên",
+    // "Phong thuỷ",
+    // "Số điện thoại,...",
 ];
 
 window.addEventListener("load", ()=>{
@@ -178,6 +179,64 @@ window.addEventListener("load", ()=>{
     //     timeout: 5000
     // });
 
+});
+
+$(window).on('load', function () {
+    function output (data, $output) {
+        var result = '<div>input: Object</div>';
+        result +=   '<div>slider: Object</div>';
+        result +=   '<div>min: ' + data.min + '</div>';
+        result +=   '<div>min_pretty: ' + data.min_pretty + '</div>';
+        result +=   '<div>max: ' + data.max + '</div>';
+        result +=   '<div>max_pretty: ' + data.max_pretty + '</div>';
+        result +=   '<div>from: ' + data.from + '</div>';
+        result +=   '<div>from_pretty: ' + data.from_pretty + '</div>';
+        result +=   '<div>from_percent: ' + data.from_percent.toFixed(2) + '</div>';
+        result +=   '<div>from_value: ' + data.from_value + '</div>';
+        result +=   '<div>to: ' + data.to + '</div>';
+        result +=   '<div>to_pretty: ' + data.to_pretty + '</div>';
+        result +=   '<div>to_percent: ' + data.to_percent.toFixed(2) + '</div>';
+        result +=   '<div>to_value: ' + data.to_value + '</div>';
+
+        var html = '<div class="uk-grid-10 uk-flex-middle" uk-grid>\n' +
+            '                <div class="uk-width-expand">\n' +
+            '                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value=' + data.from + '>\n' +
+            '                </div>\n' +
+            '                <div class="uk-width-auto">\n' +
+            '                    <span>-</span>\n' +
+            '                </div>\n' +
+            '                <div class="uk-width-expand">\n' +
+            '                    <input class="uk-input boloc__inputRange" type="text" placeholder="" value=' + data.to + '>\n' +
+            '                </div>\n' +
+            '            </div>'
+
+        $output.html(html);
+    }
+    var $output1 = $(".js-output__d1");
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 500,
+        from: 0,
+        to: 125,
+        max_postfix: "tr",
+        onStart: function (data) {
+            output(data, $output1);
+            // console.log('onStart');
+        },
+        onChange: function (data) {
+            output(data, $output1);
+            // console.log('onChange');
+        },
+        onFinish: function (data) {
+            output(data, $output1);
+            // console.log('onFinish');
+        },
+        onUpdate: function (data) {
+            output(data, $output1);
+            // console.log('onUpdate');
+        }
+    });
 });
 
 $(document).ready(function () {

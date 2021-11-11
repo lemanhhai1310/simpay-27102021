@@ -103,7 +103,7 @@
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
                     <div class="uk-section-xsmall home__content__section" uk-sticky="offset: 170; bottom: true;">
-                        <?php require "template-parts/layouts/boloc.php"; ?>
+                        <?php include "template-parts/layouts/boloc.php"; ?>
                     </div>
                 </div>
                 <div class="uk-width-expand">

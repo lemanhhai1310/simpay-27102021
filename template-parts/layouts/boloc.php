@@ -59,7 +59,19 @@
     <div>
         <label class="uk-form-label boloc__accordion__label" for="form-stacked-text">Giá tiền</label>
         <div class="uk-form-controls">
-            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+            <div class="uk-margin-small uk-hidden">
+                <div class="price-slider">
+                    <input class="uk-input number" type="number" value="0" min="0" max="500"/>
+                    <input class="uk-input number" type="number" value="125" min="0" max="500"/>
+                    <input class="uk-range range" type="range" value="0" min="0" max="500" step="1"/>
+                    <input class="uk-range range" type="range" value="125" min="0" max="500" step="1"/>
+                </div>
+            </div>
+            <div class="uk-margin-small boloc__ranger">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+            </div>
+            <div class="js-output__d1"></div>
+            <div class="uk-grid-10 uk-flex-middle uk-hidden" uk-grid>
                 <div class="uk-width-expand">
                     <input class="uk-input boloc__inputRange" type="text" placeholder="" value="0">
                 </div>
@@ -82,6 +94,10 @@
                     <span class="boloc__notNumber__txt"><?= $i ?></span>
                 </label>
                 <?php endfor; ?>
+                <label class="boloc__notNumber">
+                    <input class="uk-checkbox boloc__notNumber__check" type="checkbox">
+                    <span class="boloc__notNumber__txt">0</span>
+                </label>
             </div>
         </div>
     </div>

@@ -148,7 +148,7 @@
       }
       &__grid{
         .uk-grid-margin{
-          margin-top: 29px !important;
+          //margin-top: 29px !important;
           @include media-breakpoint-up('m'){
             margin-top: 24px !important;
           }

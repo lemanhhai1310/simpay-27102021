@@ -1,4 +1,44 @@
+.irs-handle{
+  >i{
+    .boloc__ranger &{
+      display: none !important;
+    }
+  }
+  .boloc__ranger &{
+    background: #3772FF;
+    /* Primary/ 03 */
+
+    border: 4px solid #FFFFFF;
+    box-sizing: border-box;
+    /* depth/1 */
+
+    box-shadow: 0px 8px 16px -8px rgba(15, 15, 15, 0.2);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    top: 19px;
+  }
+}
+.irs-from,
+.irs-to{
+  &:before{
+    .boloc__ranger &{
+      border-top-color: #3772FF;
+    }
+  }
+  .boloc__ranger &{
+    background: #3772FF;
+  }
+}
+.irs-bar{
+  .boloc__ranger &{
+    background: #3772FF;
+  }
+}
 .boloc{
+  &__ranger{
+
+  }
   &__offcanvas{
     &:before{
       @extend .uk-overlay-design;
