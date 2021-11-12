@@ -53,18 +53,17 @@ $isWishList = rand(false,true);
                 <div class="uk-container">
                     <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="toggle: >.uk-icon">
                         <li class="uk-parent">
-                            <a href="#">Sản phẩm</a>
+                            <a href="simcool.php">Sản phẩm</a>
                             <span class="uk-icon menumobile__uk-icon uk-position-top-right"></span>
                             <ul class="uk-nav-sub">
-                                <li><a href="#">SIM COOL</a></li>
-                                <li><a href="#">SIM BIZ</a></li>
-                                <li><a href="#">SIM SANG</a></li>
-                                <li><a href="#">SIM MAY</a></li>
-                                <li><a href="#">SIM PAL</a></li>
+                                <li><a href="simcool.php">SIM COOL</a></li>
+                                <li><a href="simcool.php">SIM BIZ</a></li>
+                                <li><a href="simcool.php">SIM SANG</a></li>
+                                <li><a href="simcool.php">SIM MAY</a></li>
+                                <li><a href="simcool.php">SIM PAL</a></li>
                             </ul>
                         </li>
-                        <li hidden><a href="">Tìm Sim<sup>*</sup></a></li>
-                        <li><a href="">Gói cước</a></li>
+                        <li><a href="goicuoc.php">Gói cước</a></li>
                         <li><a href="thanhtoan.php">Thanh toán</a></li>
                         <li><a href="lienhe.php">Liên hệ</a></li>
                     </ul>

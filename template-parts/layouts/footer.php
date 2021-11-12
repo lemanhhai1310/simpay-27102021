@@ -276,7 +276,7 @@
         </div>
         <div class="uk-grid-8" uk-grid>
             <div class="uk-width-1-1">
-                <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Gửi</span></button>
+                <a href="#modal-sendmailpass" uk-toggle class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Gửi</span></a>
             </div>
             <div class="uk-width-1-1">
                 <button type="submit" class="uk-modal-close login__box__form__btnSubmit uk-button uk-button-default uk-width-1-1"><span>Quay lại</span></button>
@@ -376,5 +376,28 @@
     </div>
 </div>
 <!--/Đăng ký thành công-->
+
+
+<!--Gửi xác nhận tài khoản-->
+<div id="modal-sendmailpass" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog login__modal__dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default login__modal__close" type="button" uk-close></button>
+        <div class="uk-margin-small uk-text-center">
+            <img src="images/Frame1017.png" alt="">
+        </div>
+        <p class="login__modal__desc uk-text-center">Chúng tôi đã gửi link xác nhận tài khoản của bạn. Hãy kiểm tra mail nhé!</p>
+
+        <div class="uk-grid-8" uk-grid>
+            <div class="uk-width-1-1">
+                <a href="#modal-login" uk-toggle class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></a>
+            </div>
+            <div class="uk-width-1-1">
+                <button type="submit" class="uk-modal-close login__box__form__btnSubmit uk-button uk-button-default uk-width-1-1"><span>Quay lại</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Gửi xác nhận tài khoản-->
 </body>
 </html>
