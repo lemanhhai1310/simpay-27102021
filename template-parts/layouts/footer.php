@@ -342,5 +342,6 @@
     </div>
 </div>
 <!--/Đăng ký thành công-->
+<script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </body>
 </html>

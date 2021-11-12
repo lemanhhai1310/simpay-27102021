@@ -182,7 +182,7 @@
                     <div class="uk-form-controls">
                         <div class="uk-inline uk-width-1-1 boloc__accordion__ngaysinh">
                             <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
-                            <input class="uk-input" type="text" value="21/09/1997">
+                            <input class="uk-input time_range" type="text" value="">
                         </div>
                     </div>
                 </div>

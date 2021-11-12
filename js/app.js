@@ -12,6 +12,10 @@ var placeholderText = [
 ];
 
 window.addEventListener("load", ()=>{
+    document.querySelector(".time_range")&&document.querySelector(".time_range").flatpickr({
+        mode: "range",
+        dateFormat: "d/m/Y"
+    });
     $('#search').placeholderTypewriter({text: placeholderText});
 
     const contentHtml = '<div class="uk-card uk-card-body uk-card-default home__tooltip__card">\n' +
