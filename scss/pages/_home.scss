@@ -196,6 +196,7 @@
       &__card{
         &__logo{
           filter: grayscale(100%);
+          .home__donhang__card:hover &,
           .home__content__sanpham__card:hover &{
             filter: grayscale(0%);
           }

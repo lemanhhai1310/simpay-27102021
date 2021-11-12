@@ -46,7 +46,7 @@
                         <div class="footer__bottom__width">
                             <div class="uk-child-width-auto uk-child-width-1-1@m uk-grid-20 uk-flex-between uk-flex-middle" uk-grid>
                                 <div>
-                                    <figure class="footer__bottom__logo uk-display-inline-block"><img src="images/logo.png" alt=""></figure>
+                                    <figure class="footer__bottom__logo uk-display-inline-block"><img src="images/Logodoc.svg" alt=""></figure>
                                 </div>
                                 <div>
                                     <div class="uk-grid uk-grid-16 uk-child-width-auto">

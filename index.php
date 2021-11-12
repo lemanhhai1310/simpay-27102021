@@ -203,7 +203,7 @@
                                             <div class="home__donhang__so">Sim số: <span>0586.77****</span></div>
                                         </div>
                                         <div>
-                                            <img src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
+                                            <img class="home__content__sanpham__card__logo" src="images/_Thẻ/1600px-Viettel_logo_2021 1.png" alt="">
                                         </div>
                                     </div>
                                 </div>

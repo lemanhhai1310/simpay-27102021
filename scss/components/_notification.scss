@@ -16,7 +16,8 @@
       padding: 0;
       color: #000 !important;
       &-success{
-        border-color: #64B73B;
+        //border-color: #64B73B;
+        border-color: #206AE6;
         color: inherit;
       }
       &-danger{
@@ -26,7 +27,8 @@
     }
     &__content{
       .uk-notification-message-success &{
-        border-color: #64B73B;
+        //border-color: #64B73B;
+        border-color: #206AE6;
       }
       .uk-notification-message-danger &{
         border-color: #E73C3D;
