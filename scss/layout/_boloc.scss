@@ -199,7 +199,9 @@
       @extend .fz-14;
       font-family: $font-SVNGilroy-SemiBold;
       &:hover{
-        border-color: #b2b2b2;
+        border-color: gray;
+        background-color: gray;
+        color: #FFFFFF;
       }
     }
   }

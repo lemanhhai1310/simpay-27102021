@@ -67,7 +67,7 @@
                             <ul class="uk-slider-items uk-child-width-1-1">
                                 <?php for ($i=0;$i<=2;$i++): ?>
                                 <li>
-                                    <div class="home__sanpham__number">0586.779.666</div>
+                                    <div class="home__sanpham__number"><a href="simphongthuy.php" class="uk-link-toggle">0586.779.666</a></div>
                                 </li>
                                 <?php endfor; ?>
                             </ul>

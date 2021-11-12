@@ -198,6 +198,7 @@
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
+                                <option value="">Tất cả</option>
                                 <option value="">Tý</option>
                                 <option value="1">Sửu</option>
                                 <option value="2">Dần</option>
@@ -223,6 +224,7 @@
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
+                                <option value="">Tất cả</option>
                                 <option value="">Kim</option>
                                 <option value="1">Mộc</option>
                                 <option value="2">Thuỷ</option>
@@ -241,20 +243,21 @@
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
-                                <option value="">Giờ Tý (23H - 1H)</option>
-                                <option value="1">Giờ Sửu (1H - 3H)</option>
-                                <option value="2">Giờ Dần (3H - 5H)</option>
-                                <option value="3">Giờ Mão (5H - 7H)</option>
+                                <option value="">Tất cả</option>
+                                <option value="">Giờ Tý</option>
+                                <option value="1">Giờ Sửu</option>
+                                <option value="2">Giờ Dần</option>
+                                <option value="3">Giờ Mão</option>
 
-                                <option value="">Giờ Thìn (7H - 9H)</option>
-                                <option value="1">Giờ Tị (9H - 11H)</option>
-                                <option value="2">Giờ Ngọ (11H - 13H)</option>
-                                <option value="3">Giờ Mùi (13H - 15H)</option>
+                                <option value="">Giờ Thìn</option>
+                                <option value="1">Giờ Tị</option>
+                                <option value="2">Giờ Ngọ</option>
+                                <option value="3">Giờ Mùi</option>
 
-                                <option value="">Giờ Thân (15H - 17H)</option>
-                                <option value="1">Giờ Dậu (17H - 19H)</option>
-                                <option value="2">Giờ Tuất (19H - 21H)</option>
-                                <option value="3">Giờ Hợi (21H - 23H)</option>
+                                <option value="">Giờ Thân</option>
+                                <option value="1">Giờ Dậu</option>
+                                <option value="2">Giờ Tuất</option>
+                                <option value="3">Giờ Hợi</option>
                             </select>
                             <button class="uk-button uk-button-default home__content__btnSort uk-width-1-1" type="button" tabindex="-1">
                                 <span></span>
@@ -268,6 +271,7 @@
                     <div class="uk-form-controls">
                         <div class="uk-width-1-1" uk-form-custom="target: > * > span:first-child">
                             <select>
+                                <option value="">Tất cả</option>
                                 <option value="1">Nam</option>
                                 <option value="">Nữ</option>
                             </select>
