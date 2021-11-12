@@ -4,9 +4,13 @@
         <!--footer__top-->
         <div class="footer__top uk-overflow-hidden" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .footer__top__img; delay: 300; repeat: false">
             <div class="uk-container">
-                <div class="uk-grid-small uk-grid-33-m uk-flex-bottom" uk-grid>
+                <div class="uk-grid-small uk-grid-33-m" uk-grid>
                     <div class="uk-width-auto@m uk-visible@m">
-                        <img class="footer__top__img" src="images/Group3880.png" alt="">
+                        <img class="footer__top__img uk-hidden" src="images/Group3880.png" alt="">
+                        <div class="uk-cover-container footer__top__img1">
+                            <canvas width="269" height="135"></canvas>
+                            <a href="http://www.freepik.com" target="_blank" class="uk-position-cover"></a>
+                        </div>
                     </div>
                     <div class="uk-width-expand">
                         <div class="footer__top__section">
@@ -119,7 +123,7 @@
                                     <li><a href="lienhe.php">1900 4750: Hottline CSKH</a></li>
                                     <li><a href="lienhe.php">Mail hỗ trợ: cskh@simpay.vn</a></li>
                                     <li><a href="lienhe.php">Câu hỏi thường gặp</a></li>
-                                    <li><a href="lienhe.php">Hướng dẫn trả góp</a></li>
+                                    <li><a href="lienhe.php">Hướng dẫn thanh toán</a></li>
                                 </ul>
                             </div>
                             <div class="uk-width-1-4@m">
@@ -367,7 +371,7 @@
 
         <div class="uk-grid-8" uk-grid>
             <div class="uk-width-1-1">
-                <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></button>
+                <a href="#modal-login" uk-toggle class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></a>
             </div>
             <div class="uk-width-1-1">
                 <button type="submit" class="uk-modal-close login__box__form__btnSubmit uk-button uk-button-default uk-width-1-1"><span>Quay lại</span></button>
