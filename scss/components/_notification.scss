@@ -16,12 +16,12 @@
       padding: 0;
       color: #000 !important;
       &-success{
-        //border-color: #64B73B;
-        //color: inherit;
+        border-color: #64B73B;
+        color: inherit;
       }
       &-danger{
-        //border-color: #E73C3D;
-        //color: inherit;
+        border-color: #E73C3D;
+        color: inherit;
       }
     }
     &__content{
@@ -31,7 +31,7 @@
       .uk-notification-message-danger &{
         border-color: #E73C3D;
       }
-      //border: 3px solid;
+      border: 3px solid;
       border-radius: 8px;
       box-sizing: border-box;
       padding: 12px;
