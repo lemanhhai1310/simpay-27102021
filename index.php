@@ -89,7 +89,7 @@
                 <div class="uk-width-expand">
                     <div class="uk-inline uk-width-1-1 home__search__mobile">
                         <span class="uk-form-icon" uk-icon="icon: user"></span>
-                        <input class="uk-input" type="text" placeholder="Tìm tên, phong thuỷ,...">
+                        <input id="searchmb" class="uk-input" type="text" placeholder="Tìm tên, phong thuỷ,...">
                     </div>
                 </div>
                 <div class="uk-width-auto uk-flex uk-flex-middle">

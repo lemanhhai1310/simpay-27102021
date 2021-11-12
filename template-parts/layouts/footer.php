@@ -234,6 +234,23 @@
                                 </div>
                             </div>
                             <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></button>
+                            <div class="login__social">
+                                <div class="uk-child-width-auto uk-flex-middle uk-flex-center uk-grid-small uk-grid-24-m" uk-grid>
+                                    <div>
+                                        <span class="login__social__title">Hoặc đăng ký bằng</span>
+                                    </div>
+                                    <div>
+                                        <div class="uk-child-width-auto uk-grid-10 uk-grid-16-m" uk-grid>
+                                            <div>
+                                                <a href="" class="login__social__icon login__social__icon--fb"></a>
+                                            </div>
+                                            <div>
+                                                <a href="" class="login__social__icon login__social__icon--google"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="uk-text-center uk-margin login__box__txt1">Bạn chưa có tài khoản SIMPAY? <a href="#modal-register" uk-toggle>Đăng ký ngay</a></div>
                         </fieldset>
                     </form>
@@ -312,6 +329,23 @@
                                 Với việc ấn vào nút “Đăng ký", Tôi đồng ý với <a href="">Điều khoản và Chính sách</a> của SIMPAY
                             </div>
                             <button type="button" uk-toggle="target: #modal-registerSuccess" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng ký</span></button>
+                            <div class="login__social">
+                                <div class="uk-child-width-auto uk-flex-middle uk-flex-center uk-grid-small uk-grid-24-m" uk-grid>
+                                    <div>
+                                        <span class="login__social__title">Hoặc đăng ký bằng</span>
+                                    </div>
+                                    <div>
+                                        <div class="uk-child-width-auto uk-grid-10 uk-grid-16-m" uk-grid>
+                                            <div>
+                                                <a href="" class="login__social__icon login__social__icon--fb"></a>
+                                            </div>
+                                            <div>
+                                                <a href="" class="login__social__icon login__social__icon--google"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="uk-text-center uk-margin login__box__txt1">Bạn đã có tài khoản? <a href="#modal-login" uk-toggle>Đăng nhập</a></div>
                         </fieldset>
                     </form>

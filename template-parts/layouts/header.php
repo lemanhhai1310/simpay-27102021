@@ -44,6 +44,57 @@ $isWishList = rand(false,true);
     </div>
 </div>
 <?php endif; ?>
+<!--offcanvasmenu-->
+<div id="offcanvasmenu" uk-offcanvas="overlay: true;flip: true;">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <div class="menumobile uk-flex uk-flex-column">
+            <div class="uk-flex-auto" style="padding-top: 50px">
+                <div class="uk-container">
+                    <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="toggle: >.uk-icon">
+                        <li class="uk-parent">
+                            <a href="#">Sản phẩm</a>
+                            <span class="uk-icon menumobile__uk-icon uk-position-top-right"></span>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">SIM COOL</a></li>
+                                <li><a href="#">SIM BIZ</a></li>
+                                <li><a href="#">SIM SANG</a></li>
+                                <li><a href="#">SIM MAY</a></li>
+                                <li><a href="#">SIM PAL</a></li>
+                            </ul>
+                        </li>
+                        <li hidden><a href="">Tìm Sim<sup>*</sup></a></li>
+                        <li><a href="">Gói cước</a></li>
+                        <li><a href="thanhtoan.php">Thanh toán</a></li>
+                        <li><a href="lienhe.php">Liên hệ</a></li>
+                    </ul>
+                    <div>
+                        <div class="uk-position-relative uk-display-inline-block">
+                            <div class="header__top__flag">
+                                <img class="" src="images/230px-Flag_of_North_Vietnam_(1955–1976).png" alt="">
+                            </div>
+                            <div class="uk-padding-small header__top__dropFlag" uk-dropdown="mode: click">
+                                <ul class="uk-nav">
+                                    <li class="uk-active"><a href="" style="--background: url('images/230px-Flag_of_North_Vietnam_(1955–1976).png')">Vietnamese</a></li>
+                                    <li><a href="" style="--background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Flag_of_the_United_States_%281847%E2%80%931848%29.svg/1200px-Flag_of_the_United_States_%281847%E2%80%931848%29.svg.png')">English</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-container">
+                    <div class="uk-section-xsmall menumobile__copyright">
+                        <div>Phiên bản Beta 0.1</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/offcanvasmenu-->
+
 <!--app-->
 <div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative">
 
@@ -242,7 +293,7 @@ $isWishList = rand(false,true);
                                     <?php endif; ?>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" id="btnMenu" class="header__mobile__icon header__mobile__icon--nav"></a>
+                                    <a href="javascript:void(0)" uk-toggle="target: #offcanvasmenu" id="btnMenu1" class="header__mobile__icon header__mobile__icon--nav"></a>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +301,7 @@ $isWishList = rand(false,true);
                     <!--/uk-navbar-right-->
                 </nav>
             </div>
-            <div class="menumobile uk-flex uk-flex-column">
+            <div class="menumobile uk-flex uk-flex-column" hidden>
                 <div class="uk-flex-auto">
                     <div class="uk-container">
                         <ul class="uk-nav-default uk-nav-parent-icon" uk-nav="toggle: >.uk-icon">

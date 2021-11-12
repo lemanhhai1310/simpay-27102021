@@ -17,6 +17,7 @@ window.addEventListener("load", ()=>{
         dateFormat: "d/m/Y"
     });
     $('#search').placeholderTypewriter({text: placeholderText});
+    $('#searchmb').placeholderTypewriter({text: placeholderText});
 
     const contentHtml = '<div class="uk-card uk-card-body uk-card-default home__tooltip__card">\n' +
         '                            <div class="uk-grid" uk-grid>\n' +
