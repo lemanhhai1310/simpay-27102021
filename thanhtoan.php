@@ -238,7 +238,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                     <div>
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">HỌ VÀ TÊN*</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="Nguyễn Văn A">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: Nguyễn Văn A,...." value="">
                                         </div>
                                     </div>
                                     <div>
@@ -246,14 +246,14 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                         <div class="uk-form-controls">
                                             <div class="uk-inline uk-width-1-1">
                                                 <a class="profile__form__iconDate uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
-                                                <input class="uk-input profile__form__input" type="text" value="04/02/1991">
+                                                <input class="uk-input profile__form__input" type="text" value="" placeholder="Ví dụ: 04/02/1991,....">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="uk-width-1-2@s">
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">SỐ CMND/ CCCD/ HỘ CHIẾU*</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="061092170">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: 061092170,...." value="">
                                         </div>
                                     </div>
                                     <div class="uk-width-1-2@s">
@@ -261,14 +261,14 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                         <div class="uk-form-controls">
                                             <div class="uk-inline uk-width-1-1">
                                                 <a class="profile__form__iconDate uk-form-icon uk-form-icon-flip" href="#" uk-icon="icon: link"></a>
-                                                <input class="uk-input profile__form__input" type="text" value="04/02/1991">
+                                                <input class="uk-input profile__form__input" type="text" value="" placeholder="Ví dụ: 04/02/1991,....">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="uk-width-1-2@s">
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">NƠI CẤP*</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="Công an tỉnh A">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: Công an tỉnh A,...." value="">
                                         </div>
                                     </div>
                                     <div class="uk-width-1-2@s">
@@ -292,19 +292,19 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                     <div>
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">Nơi đăng ký thường trú</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="" value="144 Đội Cấn, Ba Đình, Hà Nội">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: Nguyễn Văn A,...." value="">
                                         </div>
                                     </div>
                                     <div>
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">SỐ ĐIỆN THOẠI LIÊN HỆ</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="tel" placeholder="" value="0946787200">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="tel" placeholder="Ví dụ: 0946787200,...." value="">
                                         </div>
                                     </div>
                                     <div>
                                         <label class="uk-form-label profile__form__label" for="form-stacked-text">ĐỊA CHỈ GIAO HÀNG</label>
                                         <div class="uk-form-controls">
-                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: 208 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh " value="">
+                                            <input class="uk-input profile__form__input" id="form-stacked-text" type="text" placeholder="Ví dụ: 208 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh " value="208 Nguyễn Hữu Cảnh, Phường 22, Bình Thạnh, Hồ Chí Minh ">
                                         </div>
                                     </div>
                                     <div style="margin-top: 10px !important;">

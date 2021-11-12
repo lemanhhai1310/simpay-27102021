@@ -84,11 +84,6 @@ $isWishList = rand(false,true);
                                 <canvas width="310" height="69"></canvas>
                             </div>
                         </a>
-                    </div>
-                    <!--/uk-navbar-left-->
-
-                    <!--uk-navbar-right-->
-                    <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="."><span class="header__bottom__iconHome"></span></a></li>
                             <li>
@@ -105,9 +100,14 @@ $isWishList = rand(false,true);
                             </li>
                             <li hidden><a href="#">Tìm Sim<sup>*</sup></a></li>
                             <li><a href="goicuoc.php">Gói cước</a></li>
-                            <li><a href="thanhtoan.php">Thanh toán</a></li>
+                            <li hidden><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
                         </ul>
+                    </div>
+                    <!--/uk-navbar-left-->
+
+                    <!--uk-navbar-right-->
+                    <div class="uk-navbar-right">
                         <div class="uk-navbar-item header__bottom__divider uk-visible@m">
                             <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>
                                 <div>

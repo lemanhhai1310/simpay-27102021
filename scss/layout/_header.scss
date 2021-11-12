@@ -74,6 +74,9 @@
       }
     }
     .uk-logo{
+      @include media-breakpoint-up('m'){
+        margin-right: 103px;
+      }
       img{
         @include fluidx(48px,42px,height);
       }
