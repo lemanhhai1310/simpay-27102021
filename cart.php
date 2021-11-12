@@ -23,13 +23,13 @@ require "template-parts/layouts/breadcrumb.php"; ?>
         <h1 class="uk-h1 profile__content__title">Giỏ hàng của tôi</h1>
         <div class="uk-grid uk-grid-16 uk-child-width-auto" uk-grid>
             <div>
-                <a href="" class="uk-button uk-active cart__btnMenu uk-button-default"><span>Wish list</span></a>
+                <a href="javascript:void(0)" class="uk-button uk-active cart__btnMenu uk-button-default"><span>SIM đã lưu</span></a>
             </div>
             <div>
-                <a href="" class="uk-button cart__btnMenu uk-button-default"><span>Đã đặt</span></a>
+                <a href="javascript:void(0)" class="uk-button cart__btnMenu uk-button-default"><span>Đã đặt</span></a>
             </div>
             <div>
-                <a href="" class="uk-button cart__btnMenu uk-button-default"><span>Đang giao hàng</span></a>
+                <a href="javascript:void(0)" class="uk-button cart__btnMenu uk-button-default"><span>Đang giao hàng</span></a>
             </div>
         </div>
         <div class="uk-child-width-1-3@m cart__grid uk-grid-small uk-grid-32-m" uk-grid>
@@ -55,7 +55,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                     <div class="cart__card__box">
                         <div class="uk-child-width-auto uk-grid-small uk-flex-middle uk-flex-between" uk-grid>
                             <div>
-                                <div class="cart__card__quantam"><span>2,500 quan tâm</span></div>
+                                <div class="cart__card__quantam"><span>2,500</span></div>
                             </div>
                             <div>
                                 <button type="button" uk-toggle="target: #modal-package" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Mua ngay</span></button>

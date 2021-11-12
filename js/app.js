@@ -87,6 +87,10 @@ window.addEventListener("load", ()=>{
         '                    </div>\n' +
         '                </div>'
 
+    const html2 = '<div class="uk-card uk-card-default uk-card-body tooltip__card">\n' +
+        '                    <div class="tooltip__txt3">Đã có <span>2,500</span> người yêu thích Sim số này.</div>\n' +
+        '                </div>'
+
     tippy('.home__content__sanpham__info', {
         content: contentHtml,
         allowHTML: true,
@@ -107,6 +111,20 @@ window.addEventListener("load", ()=>{
         followCursor: true,
         placement: 'right-start',
     });
+
+    tippy('.cart__card__quantam', {
+        content: html2,
+        allowHTML: true,
+        followCursor: true,
+        placement: 'right-start',
+    });
+
+    $(".cart__btnMenu").click(function(){
+        $(".cart__btnMenu").removeClass("uk-active");
+        $(this).addClass("uk-active");
+    });
+
+
 
 
     let showPassword = false

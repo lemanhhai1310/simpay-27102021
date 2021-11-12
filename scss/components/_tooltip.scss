@@ -1,4 +1,14 @@
 .tooltip{
+  &__txt3{
+    color: #353945;
+    @extend .fz-14;
+    line-height: (16/14);
+    font-family: $font-SVNGilroy-Medium;
+    span{
+      color: #3772FF;
+      font-family: $font-SVNGilroy-XBold;
+    }
+  }
   &__card{
     background: rgba(#FFFFFF,0.9);
     /* 1 */

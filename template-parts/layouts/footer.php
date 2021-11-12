@@ -14,7 +14,7 @@
                                 <div class="uk-width-auto@m">
                                     <div class="footer__top__w">
                                         <h3  class="uk-h3 footer__top__title">Liên hệ với chúng tôi</h3>
-                                        <div class="footer__top__desc">Nhập sô điện thoại của bạn để chúng tôi có thể tư vấn tốt hơn</div>
+                                        <div class="footer__top__desc">Nhập số điện thoại của bạn để chúng tôi có thể tư vấn tốt hơn</div>
                                     </div>
                                 </div>
                                 <div class="uk-width-expand">

@@ -40,7 +40,7 @@
                 <div class="uk-position-top-right home__content__sanpham__link--position">
                     <a href="simphongthuy.php" class="home__content__sanpham__link home__content__sanpham__link--info"></a>
                     <a href="javascript:void(0)" onclick="addWishList()" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
-                    <a href="cart.php" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
+                    <a href="javascript:void(0)" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
                 </div>
                 <div class="home__content__sanpham__mb">
                     <div class="home__content__sanpham__phoneNumber"><?php print "$parts[1].$parts[2].<span>$parts[3]</span>"; ?></div>
