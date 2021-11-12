@@ -224,7 +224,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
             </div>
             <div>
                 <div class="uk-text-center">
-                    <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Xác nhận</span></button>
+                    <a href="thanhtoan.php" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Xác nhận</span></a>
                 </div>
             </div>
         </div>

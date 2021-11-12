@@ -289,6 +289,9 @@
         border: 2px solid #3772FF;
       }
     }
+    &__input1{
+      @extend .thanhtoan__method__input;
+    }
     &__logo{
       border: 2px solid transparent;
       border-radius: 8px;

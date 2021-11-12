@@ -91,6 +91,12 @@ window.addEventListener("load", ()=>{
         '                    <div class="tooltip__txt3">Đã có <span>2,500</span> người yêu thích Sim số này.</div>\n' +
         '                </div>'
 
+    const html3 = '<div class="uk-card uk-card-default uk-card-body tooltip__card tooltip__card--c1">\n' +
+        '                    <div class="tooltip__title1">Phí vận chuyển của SIMPAY</div>\n' +
+        '                    <div class="tooltip__txt4"><span>FREE</span> trong vòng bán kính 10km</div>\n' +
+        '                    <div class="tooltip__txt4">Với đơn hàng có giá trị >10trđ sẽ nhận được hỗ trợ về phí vận chuyển nếu ở các tỉnh thành xa.</div>\n' +
+        '                </div>'
+
     tippy('.home__content__sanpham__info', {
         content: contentHtml,
         allowHTML: true,
@@ -114,6 +120,13 @@ window.addEventListener("load", ()=>{
 
     tippy('.cart__card__quantam', {
         content: html2,
+        allowHTML: true,
+        followCursor: true,
+        placement: 'right-start',
+    });
+
+    tippy('.thanhtoan__icon', {
+        content: html3,
         allowHTML: true,
         followCursor: true,
         placement: 'right-start',
@@ -287,6 +300,12 @@ $(document).ready(function () {
             $(".Box").show();
         }else {
             $(".Box").hide();
+        }
+
+        if ($(this).attr("value") == "tragop") {
+            $(".Boxtragop").show();
+        }else {
+            $(".Boxtragop").hide();
         }
     });
 

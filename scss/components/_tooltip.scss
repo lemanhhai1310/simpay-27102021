@@ -1,4 +1,16 @@
 .tooltip{
+  &__title1{
+    @extend .fz-16;
+    color: #141416;
+    font-family: $font-SVNGilroy-Bold;
+  }
+  &__txt4{
+    color: #141416;
+    @extend .fz-14;
+    span{
+      color: #3772FF;
+    }
+  }
   &__txt3{
     color: #353945;
     @extend .fz-14;
@@ -10,6 +22,13 @@
     }
   }
   &__card{
+    &--c1{
+      >*{
+        &:nth-child(n+2){
+          margin-top: 12px;
+        }
+      }
+    }
     background: rgba(#FFFFFF,0.9);
     /* 1 */
 
