@@ -80,6 +80,9 @@
       }
     }
     &__selectFillter{
+      .uk-offcanvas-bar &{
+        border: 2px solid #E6E8EC !important;
+      }
       border: 2px solid #E6E8EC;
       box-sizing: border-box;
       border-radius: 8px;
@@ -107,6 +110,9 @@
       }
     }
     &__deleteFillter{
+      .uk-offcanvas-bar &{
+        color: #3772FF !important;
+      }
       color: #3772FF;
       line-height: (24/14);
       @extend .fz-14;

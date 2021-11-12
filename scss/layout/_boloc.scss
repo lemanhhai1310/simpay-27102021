@@ -245,6 +245,11 @@
       }
     }
     &__title{
+      &:hover{
+        .boloc__offcanvas &{
+          color: #141416;
+        }
+      }
       .boloc__offcanvas &{
         color: #141416;
       }

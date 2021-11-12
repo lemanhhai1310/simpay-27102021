@@ -333,7 +333,7 @@
 
         <div class="uk-grid-8" uk-grid>
             <div class="uk-width-1-1">
-                <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Gửi</span></button>
+                <button type="submit" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đăng nhập</span></button>
             </div>
             <div class="uk-width-1-1">
                 <button type="submit" class="uk-modal-close login__box__form__btnSubmit uk-button uk-button-default uk-width-1-1"><span>Quay lại</span></button>
