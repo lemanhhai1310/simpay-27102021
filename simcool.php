@@ -147,7 +147,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <a href="" class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                                                    <a href="" hidden class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -183,7 +183,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <a href="" class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
+                                                                    <a href="" hidden class="goicuoc__card__btn goicuoc__card__btn--cool uk-width-1-1 uk-button uk-button-default"><span>Chọn gói</span></a>
                                                                 </div>
                                                             </div>
                                                         </div>

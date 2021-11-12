@@ -75,10 +75,35 @@
     }
     .uk-logo{
       @include media-breakpoint-up('m'){
-        margin-right: 103px;
+        //margin-right: 103px;
       }
       img{
         @include fluidx(48px,42px,height);
+      }
+    }
+    .uk-navbar-dropdown{
+      $x:15px;
+      margin: 0;
+      padding: 0px 20px;
+      .uk-nav{
+        >li{
+          >a{
+            color: #141416;
+            @extend .fz-16;
+            font-family: $font-SVNGilroy-SemiBold;
+            padding: #{$x} 0px;
+            text-align: center !important;
+            display: block;
+            &:hover{
+              color: #3772FF;
+            }
+          }
+          &:nth-child(n+2){
+            >a{
+              border-top: 1px solid #E6E8EC;
+            }
+          }
+        }
       }
     }
     .uk-navbar-toggle,

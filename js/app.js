@@ -233,6 +233,15 @@ window.addEventListener("load", ()=>{
     //     timeout: 5000
     // });
 
+
+    $('select#ddlQuestNoStyle').change(function () {
+        console.log(1);
+        var str = "";
+        var getValue = $(this).val();
+        //$("ul li span.ListNumberStyle").removeClass();
+        $(".sidebar__icon1").addClass("value"+getValue);
+    });
+
 });
 
 $(window).on('load', function () {

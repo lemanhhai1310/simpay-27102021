@@ -84,16 +84,21 @@ $isWishList = rand(false,true);
                                 <canvas width="310" height="69"></canvas>
                             </div>
                         </a>
+                    </div>
+                    <!--/uk-navbar-left-->
+
+                    <!--uk-navbar-right-->
+                    <div class="uk-navbar-right">
                         <ul class="uk-navbar-nav uk-visible@m">
                             <li><a href="."><span class="header__bottom__iconHome"></span></a></li>
                             <li>
-                                <a href="#">Sản phẩm</a>
+                                <a href="simcool.php">Sản phẩm</a>
                                 <div class="uk-navbar-dropdown">
                                     <ul class="uk-nav uk-navbar-dropdown-nav">
                                         <li><a href="simcool.php">SIM COOL</a></li>
                                         <li><a href="#">SIM BIZ</a></li>
-                                        <li><a href="#">SIM SANG</a></li>
-                                        <li><a href="#">SIM MAY</a></li>
+                                        <li><a href="#">SIM VIP</a></li>
+                                        <li><a href="#">SIM LUCK</a></li>
                                         <li><a href="#">SIM PAL</a></li>
                                     </ul>
                                 </div>
@@ -103,11 +108,6 @@ $isWishList = rand(false,true);
                             <li hidden><a href="thanhtoan.php">Thanh toán</a></li>
                             <li><a href="lienhe.php">Liên hệ</a></li>
                         </ul>
-                    </div>
-                    <!--/uk-navbar-left-->
-
-                    <!--uk-navbar-right-->
-                    <div class="uk-navbar-right">
                         <div class="uk-navbar-item header__bottom__divider uk-visible@m">
                             <div class="uk-flex-middle uk-child-width-auto uk-grid-10" uk-grid>
                                 <div>
