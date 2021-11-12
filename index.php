@@ -108,19 +108,6 @@
                 </div>
                 <div class="uk-width-expand">
                     <div class="uk-section-xsmall home__content__section">
-                        <div class="home__content__mb24">
-                            <div class="uk-child-width-auto uk-flex-middle uk-grid-16-m" uk-grid>
-                                <div>
-                                    <div class="uk-button uk-button-default home__content__selectFillter">
-                                        <span>Giá từ 0 đến 125Tr</span>
-                                        <a href="" class="uk-close uk-position-center-right"></a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="" class="home__content__deleteFillter">Xoá bộ lọc</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="home__content__mb23">
                             <div class="uk-flex-middle uk-grid-small" uk-grid>
                                 <div class="uk-width-expand">

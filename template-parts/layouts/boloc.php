@@ -1,4 +1,17 @@
 <h3 class="uk-h3 boloc__title">Bộ lọc</h3>
+<div class="home__content__mb24">
+    <div class="uk-child-width-auto uk-flex-middle uk-grid-16-m" uk-grid>
+        <div>
+            <div class="uk-button uk-button-default home__content__selectFillter">
+                <span>Giá từ 0 đến 125Tr</span>
+                <a href="" class="uk-close uk-position-center-right"></a>
+            </div>
+        </div>
+        <div>
+            <a href="" class="home__content__deleteFillter">Xoá bộ lọc</a>
+        </div>
+    </div>
+</div>
 <div class="uk-grid-24 uk-grid uk-child-width-1-1 uk-form-stacked" uk-grid>
     <div hidden>
         <div class="uk-margin uk-grid-10 uk-child-width-1-1 uk-grid" uk-grid>
