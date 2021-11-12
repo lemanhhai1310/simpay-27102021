@@ -31,6 +31,7 @@
     <?php require "template-parts/layouts/search.php"; ?>
     <div class="uk-container">
         <div class="uk-section-small">
+            <h2 class="uk-h2 huongdantimsim__title1"><span>Bộ lọc Tìm kiếm nâng cao</span></h2>
             <ul class="uk-child-width-expand huongdantimsim__tab" uk-tab>
                 <li class="uk-active"><a href="#">SIM THEO LOẠI</a></li>
                 <li><a href="#">SIM THEO NHÀ MẠNG</a></li>
