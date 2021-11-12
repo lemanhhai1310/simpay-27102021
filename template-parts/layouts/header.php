@@ -252,7 +252,68 @@ $isWishList = rand(false,true);
                                         <div class="" uk-dropdown="mode: hover">
                                             <h5 class="uk-h5">Giỏ hàng của tôi (<?= ($isCart)?'2':'0' ?>)</h5>
                                             <?php if ($isCart): ?>
+                                                <div style="margin-bottom: 20px;">
+                                                    <div class="uk-child-width-1-1 uk-grid-small" uk-grid>
+                                                        <?php
+                                                        $logos = Array(
+                                                            'images/_Thẻ/1600px-Viettel_logo_2021 1.png',
+                                                            'images/mobifone.png',
+                                                            'images/reddi.png',
 
+                                                            'images/vinaphone.png',
+                                                            'images/vietnamobile.png',
+                                                            'images/itel.png',
+                                                            'images/indochina.png',
+                                                        );
+
+                                                        function randomNumberSequence($requiredLength = 7, $highestDigit = 8) {
+                                                            $sequence = '';
+                                                            for ($i = 0; $i < $requiredLength; ++$i) {
+                                                                $sequence .= mt_rand(0, $highestDigit);
+                                                            }
+                                                            return $sequence;
+                                                        }
+                                                        $numberPrefixes = ['84055', '84086', '84088', '84087', '84092','84056','84094','84098'];
+                                                        for ($i=1;$i<=2;$i++): ?>
+                                                            <div>
+                                                                <div class="uk-card uk-card-default uk-card-body home__content__sanpham__card">
+                                                                    <?php
+                                                                    $numberPrefixes[array_rand($numberPrefixes)];
+                                                                    $phone = $numberPrefixes[array_rand($numberPrefixes)] ."". randomNumberSequence();
+                                                                    $parts=sscanf($phone,'%2c%3c%3c%4c');
+                                                                    ?>
+                                                                    <?php if ($i<=6): ?>
+                                                                        <?php
+                                                                        $items = Array(
+                                                                            'images/_Thẻ/Tag1.png',
+                                                                            'images/_Thẻ/Tag2.png',
+                                                                            'images/_Thẻ/Tag3.png',
+                                                                        );
+                                                                        ?>
+                                                                        <img hidden class="uk-position-top-left home__content__sanpham__imgTag" src="<?= $items[array_rand($items)] ?>" alt="">
+                                                                    <?php endif; ?>
+                                                                    <div class="uk-position-top-right home__content__sanpham__link--position">
+                                                                        <a href="simphongthuy.php" class="home__content__sanpham__link home__content__sanpham__link--info"></a>
+                                                                        <a href="javascript:void(0)" onclick="addWishList()" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
+                                                                        <a href="javascript:void(0)" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
+                                                                    </div>
+                                                                    <div class="home__content__sanpham__mb">
+                                                                        <div class="home__content__sanpham__phoneNumber"><?php print "$parts[1].$parts[2].<span>$parts[3]</span>"; ?></div>
+                                                                        <span class="home__content__sanpham__info" hidden></span>
+                                                                    </div>
+                                                                    <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
+                                                                        <div>
+                                                                            <img class="home__content__sanpham__card__logo" src="<?= $logos[array_rand($logos)] ?>" alt="">
+                                                                        </div>
+                                                                        <div>
+                                                                            <span class="home__content__sanpham__priceTxt">1.800.000đ</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <?php endfor; ?>
+                                                    </div>
+                                                </div>
                                             <?php else: ?>
                                                 <div class="header__bottom__cart__txtEmpty">Opps, chưa có gì trong giỏ</div>
                                             <?php endif; ?>
