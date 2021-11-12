@@ -42,11 +42,11 @@
                     'desc' => 'Bạn đồng hành của nhà kinh doanh',
                 ),
                 array(
-                    'txt' => 'sang',
+                    'txt' => 'vip',
                     'desc' => 'Sim dành cho giới TINH HOA',
                 ),
                 array(
-                    'txt' => 'may',
+                    'txt' => 'luck',
                     'desc' => 'Thay Sim Đổi Vận',
                 ),
                 array(
