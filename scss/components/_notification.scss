@@ -31,12 +31,12 @@
       .uk-notification-message-danger &{
         border-color: #E73C3D;
       }
-      border: 3px solid;
+      //border: 3px solid;
       border-radius: 8px;
       box-sizing: border-box;
       padding: 12px;
       width: 100% !important;
-      background-color: #fff;
+      background-color: rgba(#fff,0.9);
       $x:30px;
       &--wishList{
         max-width: calc(501px + #{$x}) !important;

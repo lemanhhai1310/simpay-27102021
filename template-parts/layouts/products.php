@@ -48,7 +48,7 @@
                 </div>
                 <div class="uk-child-width-auto uk-grid-small uk-flex-between uk-flex-middle" uk-grid>
                     <div>
-                        <img src="<?= $logos[array_rand($logos)] ?>" alt="">
+                        <img class="home__content__sanpham__card__logo" src="<?= $logos[array_rand($logos)] ?>" alt="">
                     </div>
                     <div>
                         <span class="home__content__sanpham__priceTxt">1.800.000đ</span>
