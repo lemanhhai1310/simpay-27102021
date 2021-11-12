@@ -75,7 +75,7 @@ window.addEventListener("load", ()=>{
         placement: 'right-start',
     });
 
-    tippy('.home__content__sanpham__link--info', {
+    tippy('.home__content__sanpham__link--info,.home__content__sanpham__phoneNumber', {
         content: content,
         allowHTML: true,
         followCursor: true,
