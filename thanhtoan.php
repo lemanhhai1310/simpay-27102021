@@ -36,7 +36,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                                 <h5 class="uk-h5 thanhtoan__card__title">Tổng quan</h5>
                             </div>
                             <div>
-                                <a href="cart.php" class="thanhtoan__card__link1">Đổi SIM</a>
+                                <a href="cart.php" class="thanhtoan__card__link1">Thay đổi</a>
                             </div>
                         </div>
                     </div>
