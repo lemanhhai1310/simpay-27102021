@@ -3,7 +3,7 @@
         <div class="uk-card uk-card-default uk-card-body home__search__card uk-visible@m">
             <div class="uk-text-center uk-margin-bottom home__search__box">
                 <h3 class="uk-card-title home__search__title">Tìm kiếm SIM</h3>
-                <div class=""><a href="" class="home__search__link">Hướng dẫn tìm SIM ưng ý</a></div>
+                <div class=""><a href="huongdantimsim.php" class="home__search__link">Hướng dẫn tìm SIM ưng ý</a></div>
             </div>
             <div class="uk-grid-25-m uk-flex-middle" uk-grid>
                 <div class="uk-width-expand">

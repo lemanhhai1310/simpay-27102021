@@ -1,4 +1,4 @@
-<?php $data["title"] = "Bộ lọc Tìm kiếm nâng cao"; ?>
+<?php $data["title"] = "Hướng dẫn tìm sim"; ?>
 <?php $isHeader = true; ?>
 <?php $isFooter = true; ?>
 <?php $isSticky = true; ?>
