@@ -25,7 +25,7 @@ require "template-parts/layouts/breadcrumb.php"; ?>
 <div class="uk-section-xsmall thanhtoan__section">
     <div class="uk-container">
         <div class="uk-margin">
-            <a href="" class="uk-button uk-button-default uk-border-pill thanhtoan__btnBack"><span>Quay về chọn gói cước</span></a>
+            <a href="#modal-package" uk-toggle class="uk-button uk-button-default uk-border-pill thanhtoan__btnBack"><span>Quay về chọn gói cước</span></a>
         </div>
         <div class="uk-grid-30 uk-grid-136-m" uk-grid>
             <div class="uk-width-1-2@m uk-flex-last@m">
