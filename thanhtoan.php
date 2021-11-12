@@ -169,16 +169,16 @@ require "template-parts/layouts/breadcrumb.php"; ?>
                         </div>
                     </div>
                     <div class="uk-margin">
-                        <a href="thongtindonhang.php" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đặt mua sim</span></a>
                         <div class="uk-margin uk-grid-small" uk-grid>
                             <div class="uk-width-auto">
-                                <input value="" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="checkbox" checked="">
+                                <input value="" class="uk-checkbox thanhtoanMethod boloc__checkBox__check" name="payment" type="checkbox">
                             </div>
                             <div class="uk-width-expand">
                                 <div class="login__box__txt1 uk-margin-remove">Với việc ấn vào nút “Đặt mua", Tôi đồng ý với <a href="">Điều khoản mua hàng</a> và
                                     <a href="">Chính sách</a> của SIMPAY</div>
                             </div>
                         </div>
+                        <a href="thongtindonhang.php" class="login__box__form__btnSubmit uk-button uk-button-secondary uk-width-1-1"><span>Đặt mua sim</span></a>
                     </div>
                 </div>
             </div>
