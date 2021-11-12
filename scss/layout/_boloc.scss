@@ -19,6 +19,13 @@
     top: 19px;
   }
 }
+.irs-max{
+  .boloc__ranger &{
+    &:before{
+      content: "> ";
+    }
+  }
+}
 .irs-line{
   .boloc__ranger &{
     background: #F4F5F6;
