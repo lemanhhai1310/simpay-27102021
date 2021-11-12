@@ -47,9 +47,6 @@ window.addEventListener("load", ()=>{
 
     const content = '<div class="uk-card tooltip__card uk-card-body uk-card-default">\n' +
         '    <div class="tooltip__item">\n' +
-        '        <span class="tooltip__title">Thông tin Sim</span>\n' +
-        '    </div>\n' +
-        '    <div class="tooltip__item">\n' +
         '        <div class="uk-grid-10 uk-child-width-1-1" uk-grid>\n' +
         '            <div>\n' +
         '                <div uk-grid>\n' +
