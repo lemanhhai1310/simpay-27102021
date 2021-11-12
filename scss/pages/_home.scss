@@ -54,6 +54,7 @@
           line-height: (20/14);
           @extend .fz-14;
           font-family: $font-SVNGilroy-Bold;
+          white-space: nowrap;
         }
       }
       .uk-icon{
