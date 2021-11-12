@@ -1,5 +1,23 @@
 <div id="my-search" class="search__section" uk-sticky="offset: 76">
     <div class="uk-container">
+        <div hidden uk-grid>
+            <div class="uk-width-auto">
+                <div class="uk-card uk-card-default uk-card-body tooltip__card">
+                    <div class="tooltip__item">
+                        <div class="tooltip__title">Cách Tìm Sim*</div>
+                    </div>
+                    <div class="tooltip__item">
+                        <ul class="uk-list tooltip__list">
+                            <li>Tìm sim có số <span>6789</span> bạn hãy gõ <span>6789</span>.</li>
+                            <li>Tìm sim có đầu <span>090</span> đuôi <span>8888</span> hãy gõ <span>090*8888</span>.</li>
+                            <li>Tìm sim bắt đầu bằng 0914 đuôi bất kỳ, hãy gõ: <span>0914*</span>.</li>
+                            <li>Chọn 1 hoặc các tiêu chí tại <span>Bộ lọc</span> để tìm Sim số phù hợp.</li>
+                            <li>Chọn các <span>Từ khoá</span> được tạo bởi công nghệ AI dưới khung tìm kiếm để tìm Sim số phù hợp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="uk-card uk-card-default uk-card-body home__search__card uk-visible@m">
             <div class="uk-text-center uk-margin-bottom home__search__box">
                 <h3 class="uk-card-title home__search__title">Tìm kiếm SIM</h3>

@@ -72,6 +72,21 @@ window.addEventListener("load", ()=>{
         '    </div>\n' +
         '</div>'
 
+    const html1 = '<div class="uk-card uk-card-default uk-card-body tooltip__card">\n' +
+        '                    <div class="tooltip__item">\n' +
+        '                        <div class="tooltip__title">Cách Tìm Sim*</div>\n' +
+        '                    </div>\n' +
+        '                    <div class="tooltip__item">\n' +
+        '                        <ul class="uk-list tooltip__list">\n' +
+        '                            <li>Tìm sim có số <span>6789</span> bạn hãy gõ <span>6789</span>.</li>\n' +
+        '                            <li>Tìm sim có đầu <span>090</span> đuôi <span>8888</span> hãy gõ <span>090*8888</span>.</li>\n' +
+        '                            <li>Tìm sim bắt đầu bằng 0914 đuôi bất kỳ, hãy gõ: <span>0914*</span>.</li>\n' +
+        '                            <li>Chọn 1 hoặc các tiêu chí tại <span>Bộ lọc</span> để tìm Sim số phù hợp.</li>\n' +
+        '                            <li>Chọn các <span>Từ khoá</span> được tạo bởi công nghệ AI dưới khung tìm kiếm để tìm Sim số phù hợp.</li>\n' +
+        '                        </ul>\n' +
+        '                    </div>\n' +
+        '                </div>'
+
     tippy('.home__content__sanpham__info', {
         content: contentHtml,
         allowHTML: true,
@@ -81,6 +96,13 @@ window.addEventListener("load", ()=>{
 
     tippy('.home__content__sanpham__link--info,.home__content__sanpham__phoneNumber', {
         content: content,
+        allowHTML: true,
+        followCursor: true,
+        placement: 'right-start',
+    });
+
+    tippy('.home__search__link', {
+        content: html1,
         allowHTML: true,
         followCursor: true,
         placement: 'right-start',
