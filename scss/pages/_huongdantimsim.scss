@@ -1,0 +1,55 @@
+.huongdantimsim{
+  &__tab{
+    @include media-breakpoint-up('m'){
+      margin-bottom: 50px;
+    }
+    >li{
+      >a{
+        color: #212B36;
+        @extend .fz-18;
+        font-family: $font-SVNGilroy-Bold;
+      }
+      &.uk-active{
+        >a{
+          color: #3772FF;
+          font-family: $font-SVNGilroy-XBold;
+        }
+      }
+    }
+  }
+  &__title{
+    color: #000000;
+    @extend .fz-20;
+    font-family: $font-SVNGilroy-Bold;
+    margin-bottom: 8px;
+  }
+  &__content{
+    color: #000000;
+    @extend .fz-16;
+    line-height: (24/16);
+    font-family: $font-SVNGilroy-Medium;
+  }
+  &__list{
+    margin: 0;
+    >li{
+      &:before{
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        $x:4px;
+        width: #{$x};
+        height: #{$x};
+        border-radius: 50%;
+        background-color: #000000;
+        display: inline-block;
+      }
+      margin: 0;
+      position: relative;
+      padding-left: 15px;
+      span{
+        font-family: $font-SVNGilroy-XBold;
+      }
+    }
+  }
+}
