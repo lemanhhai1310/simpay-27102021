@@ -58,8 +58,8 @@ $isWishList = rand(false,true);
                             <ul class="uk-nav-sub">
                                 <li><a href="simcool.php">SIM COOL</a></li>
                                 <li><a href="simcool.php">SIM BIZ</a></li>
-                                <li><a href="simcool.php">SIM SANG</a></li>
-                                <li><a href="simcool.php">SIM MAY</a></li>
+                                <li><a href="simcool.php">SIM VIP</a></li>
+                                <li><a href="simcool.php">SIM LUCK</a></li>
                                 <li><a href="simcool.php">SIM PAL</a></li>
                             </ul>
                         </li>
