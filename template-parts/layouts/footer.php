@@ -94,9 +94,11 @@
                                         <div><img src="images/visa.png" alt=""></div>
                                         <div><img src="images/mastercard.png" alt=""></div>
                                         <div><img src="images/the.png" alt=""></div>
-                                        <div><img src="images/tienmat.png" alt=""></div>
                                         <div><img src="images/tragop.png" alt=""></div>
-                                        <div><img src="images/mastercard.png" alt=""></div>
+                                        <div><img src="images/tienmat.png" alt=""></div>
+                                        <div><img src="images/momo.png" alt=""></div>
+                                        <div><img src="images/payoo.png" alt=""></div>
+                                        <div><img src="images/vnpay.png" alt=""></div>
                                     </div>
                                 </div>
                             </li>
@@ -117,6 +119,7 @@
                                     <li><a href="lienhe.php">Tuyển dụng</a></li>
                                     <li><a href="lienhe.php">Chính sách bảo mật</a></li>
                                     <li><a href="lienhe.php">Điều khoản sử dụng</a></li>
+                                    <li><a href="lienhe.php">Câu hỏi thường gặp</a></li>
                                 </ul>
                             </div>
                             <div class="uk-width-1-3@m">
@@ -124,8 +127,9 @@
                                 <ul class="uk-list footer__bottom__menuList">
                                     <li><a href="lienhe.php">1900 4750: Hottline CSKH</a></li>
                                     <li><a href="lienhe.php">Mail hỗ trợ: cskh@simpay.vn</a></li>
-                                    <li><a href="lienhe.php">Câu hỏi thường gặp</a></li>
-                                    <li><a href="lienhe.php">Hướng dẫn thanh toán</a></li>
+                                    <li><a href="lienhe.php">Chính sách thanh toán</a></li>
+                                    <li><a href="lienhe.php">Hướng dẫn trả góp</a></li>
+                                    <li><a href="lienhe.php">Chính sách bảo hành</a></li>
                                 </ul>
                             </div>
                             <div class="uk-width-1-4@m">

@@ -419,6 +419,10 @@
       &__input{
         border-radius: 8px;
         height: #{$x};
+        .uk-sticky-fixed &{
+          $x:44px;
+          height: #{$x};
+        }
         border-color: transparent;
         &:focus{
           border-color: transparent;
@@ -428,6 +432,10 @@
         letter-spacing: -0.01em;
       }
       &__btnSelect{
+        .uk-sticky-fixed &{
+          $x:44px;
+          line-height: calc(#{$x} - 2px);
+        }
         line-height: calc(#{$x} - 2px);
         border-color: transparent;
         text-transform: inherit;
