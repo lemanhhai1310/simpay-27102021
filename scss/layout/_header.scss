@@ -547,7 +547,9 @@
     @extend .uk-overlay-design;
   }
   .uk-offcanvas-bar{
-    background: #FFFFFF;
+    //background: rgba(#FFFFFF,0.9);
+    //background: rebeccapurple !important;
+    background: transparent;
     padding: 0;
   }
   .uk-offcanvas-close{
@@ -560,4 +562,7 @@
       opacity: 0;
     }
   }
+}
+.menumobile{
+  background: rgba(#FFFFFF,0.9);
 }
