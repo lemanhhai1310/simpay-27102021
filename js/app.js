@@ -50,7 +50,7 @@ window.addEventListener("load", ()=>{
         '                            </div>\n' +
         '                        </div>';
 
-    const content = '<div class="uk-card tooltip__card uk-card-body uk-card-default">\n' +
+    const content = '<div class="uk-card tooltip__card tooltip__card--c2 uk-card-body uk-card-default">\n' +
         '    <div class="tooltip__item">\n' +
         '        <div class="uk-grid-10 uk-child-width-1-1" uk-grid>\n' +
         '            <div>\n' +

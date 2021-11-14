@@ -22,6 +22,9 @@
     }
   }
   &__card{
+    &--c2{
+      border-left: 2px solid #3772FF;
+    }
     &--c1{
       >*{
         &:nth-child(n+2){
