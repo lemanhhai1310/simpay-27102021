@@ -237,12 +237,12 @@
       }
     }
     &__tagGrid{
-      margin-top: 31px !important;
+      margin-top: 12px !important;
       @include media-breakpoint-up('m'){
         margin-left: 155px;
         .uk-sticky-fixed &{
           margin-left: 182px;
-          margin-top: 16px !important;
+          margin-top: 8px !important;
         }
       }
       .uk-sticky-fixed &{
