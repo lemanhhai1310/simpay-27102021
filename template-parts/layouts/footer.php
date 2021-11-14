@@ -71,6 +71,7 @@
                                         <li><a href="">Tuyển dụng</a></li>
                                         <li><a href="">Chính sách bảo mật</a></li>
                                         <li><a href="">Điều khoản sử dụng</a></li>
+                                        <li><a href="">Câu hỏi thường gặp</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -80,8 +81,9 @@
                                     <ul class="uk-list footer__bottom__menuList">
                                         <li><a href="">1900 4750: Hottline CSKH</a></li>
                                         <li><a href="">Mail hỗ trợ: cskh@simpay.vn</a></li>
-                                        <li><a href="">Câu hỏi thường gặp</a></li>
+                                        <li><a href="">Chính sách thanh toán</a></li>
                                         <li><a href="">Hướng dẫn trả góp</a></li>
+                                        <li><a href="">Chính sách bảo hành</a></li>
                                     </ul>
                                 </div>
                             </li>

@@ -118,7 +118,7 @@
                                 <div class="uk-width-auto@s">
                                     <div class="uk-child-width-auto uk-flex-middle uk-grid-19" uk-grid>
                                         <div>
-                                            <div class="home__content__labelSort">Lọc theo:</div>
+                                            <div class="home__content__labelSort">Sắp xếp kết quả theo:</div>
                                         </div>
                                         <div>
                                             <div uk-form-custom="target: > * > span:first-child">
