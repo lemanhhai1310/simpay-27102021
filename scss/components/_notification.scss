@@ -1,10 +1,10 @@
 .uk{
   &-notification{
     width: inherit;
-    top: 50px;
+    //top: 50px;
     &-top{
       &-right{
-        right: 26px;
+        //right: 26px;
       }
     }
     &-message{
@@ -28,26 +28,36 @@
     &__content{
       .uk-notification-message-success &{
         //border-color: #64B73B;
-        border-color: #206AE6;
+        //border-color: #206AE6;
       }
       .uk-notification-message-danger &{
-        border-color: #E73C3D;
+        //border-color: #E73C3D;
       }
-      border: 3px solid;
+      //border: 3px solid;
       border-radius: 8px;
       box-sizing: border-box;
-      padding: 12px;
+      padding: 13.5px 12px;
       width: 100% !important;
-      background-color: rgba(#fff,0.9);
+      background-color: rgba(#fff,1);
+      box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.2);
       $x:30px;
       &--wishList{
-        max-width: calc(501px + #{$x}) !important;
+        //max-width: calc(501px + #{$x}) !important;
       }
       &--acc{
-        max-width: calc(431px + #{$x}) !important;
+        //max-width: calc(431px + #{$x}) !important;
       }
       &--error{
-        max-width: calc(310px + #{$x}) !important;
+        //max-width: calc(310px + #{$x}) !important;
+      }
+      &--default{
+
+      }
+      &--info{
+
+      }
+      &--error{
+
       }
     }
     &__text{
@@ -56,6 +66,9 @@
       font-family: $font-SVNGilroy-Medium;
       span{
         font-family: $font-SVNGilroy-XBold;
+        .uk-notification__content--error &{
+          color: #E5293A;
+        }
       }
     }
   }

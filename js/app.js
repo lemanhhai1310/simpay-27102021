@@ -214,12 +214,52 @@ window.addEventListener("load", ()=>{
         '<div class="uk-notification__text">Nhập sai quá <span>05</span> lần sẽ bị khoá tài khoản.</div>' +
         '</div>';
 
-    // UIkit.notification({
-    //     message: wishList,
-    //     status: 'success',
-    //     pos: 'top-right',
-    //     timeout: 5000
-    // });
+    const notiDefault1 = '<div class="uk-notification__content uk-notification__content--default">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục</div>' +
+        '<div class="uk-notification__text"><span>Danh sách yêu thích</span> của bạn.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
+    const notiDefault2 = '<div class="uk-notification__content uk-notification__content--default">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục</div>' +
+        '<div class="uk-notification__text"><span>Giỏ hàng</span> của bạn.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
+    const notiInfo = '<div class="uk-notification__content uk-notification__content--info">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Hãy <span><a href="">Đăng ký</a>/<a href="">Đăng nhập</a></span> để cải thiện trải nghiệm Cá nhân</div>' +
+        '<div class="uk-notification__text">khi truy cập và sử dụng <span>Danh sách yêu thích</span> của bạn.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
+    const notiError = '<div class="uk-notification__content uk-notification__content--error">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Bạn đã điền <span>Sai mật khẩu đăng nhập 02</span> lần.</div>' +
+        '<div class="uk-notification__text">Nhập sai quá <span>05</span> lần sẽ bị khoá tài khoản.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
+    UIkit.notification({
+        message: notiError,
+        status: 'primary',
+        pos: 'top-right',
+        timeout: 5000000
+    });
     //
     // UIkit.notification({
     //     message: acc,

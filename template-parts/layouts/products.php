@@ -40,7 +40,7 @@
                 <div class="uk-position-top-right home__content__sanpham__link--position">
                     <a href="simphongthuy.php" class="home__content__sanpham__link home__content__sanpham__link--info"></a>
                     <a href="javascript:void(0)" onclick="addWishList()" class="home__content__sanpham__link home__content__sanpham__link--wishList"></a>
-                    <a href="javascript:void(0)" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
+                    <a href="javascript:void(0)" onclick="addCart()" class="home__content__sanpham__link home__content__sanpham__link--addCart"></a>
                 </div>
                 <div class="home__content__sanpham__mb">
                     <div class="home__content__sanpham__phoneNumber"><?php print "$parts[1].$parts[2].<span>$parts[3]</span>"; ?></div>
@@ -60,11 +60,39 @@
 </div>
 
 <script>
-    const wishList = '<div class="uk-notification__content uk-notification__content--wishList"><div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục <span>Danh sách yêu thích</span> của bạn.</div></div>';
+    const notiDefault1 = '<div class="uk-notification__content uk-notification__content--default">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục</div>' +
+        '<div class="uk-notification__text"><span>Danh sách yêu thích</span> của bạn.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
+    const notiDefault2 = '<div class="uk-notification__content uk-notification__content--default">' +
+        '<div class="uk-grid uk-grid-12">' +
+        '<div class="uk-width-auto"><div class="uk-cover-container uk-border-circle"><img src="images/Group4257.png" alt="" uk-cover><canvas width="46" height="46"></canvas></div></div>' +
+        '<div class="uk-width-expand">' +
+        '<div class="uk-notification__text">Sim số: <span>056.780.666</span> đã được thêm vào mục</div>' +
+        '<div class="uk-notification__text"><span>Giỏ hàng</span> của bạn.</div>' +
+        '</div>' +
+        '</div>' +
+        '</div>'
+
     const addWishList = () => {
         UIkit.notification({
-            message: wishList,
-            status: 'success',
+            message: notiDefault1,
+            status: 'primary',
+            pos: 'top-right',
+            timeout: 5000
+        });
+    }
+
+    const addCart = () => {
+        UIkit.notification({
+            message: notiDefault2,
+            status: 'primary',
             pos: 'top-right',
             timeout: 5000
         });
