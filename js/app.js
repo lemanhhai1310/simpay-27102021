@@ -254,12 +254,12 @@ window.addEventListener("load", ()=>{
         '</div>' +
         '</div>'
 
-    UIkit.notification({
-        message: notiError,
-        status: 'primary',
-        pos: 'top-right',
-        timeout: 5000000
-    });
+    // UIkit.notification({
+    //     message: notiError,
+    //     status: 'primary',
+    //     pos: 'top-right',
+    //     timeout: 5000000
+    // });
     //
     // UIkit.notification({
     //     message: acc,
