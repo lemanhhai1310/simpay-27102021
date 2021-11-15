@@ -84,7 +84,7 @@
             <?php endforeach; ?>
         </div>
     </div>
-    <?php require "template-parts/layouts/search.php"; ?>
+    <?php include "template-parts/layouts/search.php"; ?>
     <div class="uk-hidden@m home__searchmb uk-margin-small-bottom" uk-sticky="offset: 60">
         <div class="uk-container">
             <div class="uk-flex-middle uk-grid-16" uk-grid>
@@ -140,7 +140,7 @@
                             </div>
                         </div>
                         <div class="home__content__mb77">
-                            <?php require "template-parts/layouts/products.php"; ?>
+                            <?php include "template-parts/layouts/products.php"; ?>
                         </div>
 
                         <ul class="uk-pagination uk-flex-center pagination uk-grid-4" uk-margin>

@@ -415,12 +415,12 @@
           }
         }
       }
-      $x:46px;
+      $x:50px;
       &__input{
         border-radius: 8px;
         height: #{$x};
         .uk-sticky-fixed &{
-          $x:44px;
+          $x:40px;
           height: #{$x};
         }
         border-color: transparent;
@@ -433,7 +433,7 @@
       }
       &__btnSelect{
         .uk-sticky-fixed &{
-          $x:44px;
+          $x:40px;
           line-height: calc(#{$x} - 2px);
         }
         line-height: calc(#{$x} - 2px);
