@@ -101,6 +101,11 @@
         </div>
     </div>
     <div class="uk-container">
+        <div class="uk-position-relative banner" uk-sticky="offset: 190">
+            <a href="" class="uk-position-center-left-out banner__img"><img src="images/BANNER160x600-01left.png" alt=""></a>
+            <a href="" class="uk-position-center-right-out banner__img"><img src="images/BANNER160x600-02right.png" alt=""></a>
+        </div>
+        <a href="" class="uk-position-fixed uk-position-bottom bottomBaner"><img src="images/Mainbanner_landingpage1-01.png" alt=""></a>
         <div class="home__content">
             <div class="uk-grid-divider uk-grid-medium" uk-grid>
                 <div class="uk-width-1-4@m uk-visible@m">
@@ -226,4 +231,14 @@
         </div>
     </div>
 </div>
+<!-- This is the modal with the outside close button -->
+<div id="modal-close-outside-popupBanner" uk-modal>
+    <div class="uk-modal-dialog popupBaner__dialog">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        <a href=""><img src="images/Popupbannercopy.png" alt=""></a>
+    </div>
+</div>
+<script>
+    UIkit.modal('#modal-close-outside-popupBanner').show();
+</script>
 <?php require "template-parts/layouts/footer.php"; ?>
